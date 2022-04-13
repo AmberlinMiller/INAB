@@ -1,0 +1,242 @@
+@import url("reset.css");
+
+body{
+    background-color: black;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #f6f6f6;
+}
+
+h1{
+    font-size: 96px;
+}
+
+h2{
+    font-size: 96px;
+}
+
+h3{
+    font-size: 64px;
+}
+
+h4{
+    font-size: 48px;
+}
+
+a{
+    color: black;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+/* ----------Header--------------------------- */
+
+header{
+    position: relative;
+}
+
+h1{
+    position: absolute;
+}
+
+header h3{
+    position: absolute;
+    top: 696px;
+    left: 464px;
+
+    width: 978px;
+}
+
+.pic_slid{}
+
+.left{
+    position: absolute;
+}
+
+.left:hover{}
+
+img{}
+
+.right{}
+
+.right:hover{}
+
+/* ----------Navigation----------------------- */
+
+.burger{}
+
+.burger div{
+    color: #f6f6f6;
+    font-size: 16px;
+}
+
+.burger div a{}
+
+.burger a:hover{}
+
+.burger div p{}
+
+.burger ul{
+    background-color: #f6f6f615;
+    color: black;
+    font-size: 16px;
+}
+
+.burger ul li{}
+
+.burger ul li a{}
+
+.burger ul li a:hover{}
+
+.overhear{
+    display: hidden;
+}
+
+/* ----------Main----------------------------- */
+
+/* ----------Sec Us--------------------------- */
+
+.us{}
+
+.us h2{}
+
+.us p{}
+
+.us img{}
+
+/* ----------Sec Mandate---------------------- */
+
+.mandate{}
+
+.mandate h3{}
+
+.mandate div{}
+
+.mandate p{}
+
+.mandate img{}
+
+/* ----------History-------------------------- */
+
+.history{}
+
+.history h3{}
+
+.history ul{}
+
+.history ul li{}
+
+.year{}
+
+.year span{}
+
+ul li p{}
+
+.history img{}
+
+/* ----------Land----------------------------- */
+
+.land{}
+
+.land h3{}
+
+.land div{}
+
+.land p{}
+
+.land img{}
+
+/* ----------Law------------------------------ */
+
+.law{}
+
+.law h3{}
+
+.law img{}
+
+.law p{}
+
+/* ----------Navigation----------------------- */
+
+nav{
+    width: 1200px;
+    
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+nav ul{
+    
+}
+
+nav ul li{
+    display: block;
+    text-align: center;
+}
+
+nav ul li a{
+    color: #f6f6f6;
+    font-size: 36px;
+}
+
+nav ul li img{
+    width: 78.18px;
+    height: 90px;
+
+    margin-top: 10px;
+}
+
+/* -----------Footer--------------------------- */
+
+footer{
+    width: 1200px;
+
+    position: relative;
+}
+
+.cca_logo{
+    width: 294px;
+    height: 55px;
+
+    position: absolute;
+    left: 78px;
+}
+
+.sab_logo{
+    width: 80px;
+    height: 55px;
+
+    position: absolute;
+    left: 400px;
+}
+
+footer ul{
+    margin-right: 77px;
+}
+
+footer ul li{}
+
+footer ul li a{
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    
+
+}
+
+footer ul li img{
+    width: 51px;
+    height: 51px;
+    margin-bottom: 30px;
+    
+}
+
+footer p{
+    color: #f6f6f6;
+    font-size: 12px;
+
+    position: absolute;
+    left: 560px;
+    top: 35px;
+}
