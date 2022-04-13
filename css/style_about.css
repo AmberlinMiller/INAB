@@ -1,6 +1,7 @@
 @import url("reset.css");
 
 body{
+
     background-color: black;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -33,11 +34,17 @@ a{
 /* ----------Header--------------------------- */
 
 header{
+    width: 1440px;
+    margin: 0 auto;
     position: relative;
+    
 }
 
 h1{
+    width: 762px;
     position: absolute;
+    top: -13px;
+    left: -10px;
 }
 
 header h3{
@@ -52,40 +59,96 @@ header h3{
 
 .left{
     position: absolute;
+    left: 120px;
+    top: 335px;
+    opacity: 0.5;
 }
 
-.left:hover{}
+.left:hover{
+    opacity: 1;
+}
 
-img{}
+img{
+    
+}
 
-.right{}
+.right{
+    position: absolute;
+    left: 1240px;
+    top: 335px;
+    opacity: 0.5;
+}
 
-.right:hover{}
+.right:hover{
+    opacity: 1;
+}
 
 /* ----------Navigation----------------------- */
 
-.burger{}
+.burger{
+    width: 1440px;
 
-.burger div{
+    position: fixed;
+    top: 80px;
+    right: -1088px;
+
+    z-index: 1;
+}
+
+.burger div a{
+    color: #5e5c5c;
+    font-size: 16px;
+}
+
+.burger a:hover{
     color: #f6f6f6;
-    font-size: 16px;
 }
 
-.burger div a{}
+.burger div p{
+    color: #5e5c5c;
 
-.burger a:hover{}
+    display: inline-block;
+}
 
-.burger div p{}
+.list{
+    display: inline-block;
+}
 
-.burger ul{
+.list div{
+    width: 40px;
+    height: 6px;
+    background-color: #5e5c5c;
+    margin-top: 6px;
+}
+
+ul{
     background-color: #f6f6f615;
-    color: black;
-    font-size: 16px;
+    
+    width: 170px;
+    height: 100%;
+
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 29px;
+
+    display: none;
+    
 }
 
-.burger ul li{}
+.burger a ul:hover{
+    
+}
 
-.burger ul li a{}
+.burger ul li{
+    margin-top: 10px;
+}
+
+.burger ul li a{
+    color: #5e5c5c;
+    font-size: 16px;
+
+}
 
 .burger ul li a:hover{}
 
@@ -95,92 +158,333 @@ img{}
 
 /* ----------Main----------------------------- */
 
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
 /* ----------Sec Us--------------------------- */
 
-.us{}
-
-.us h2{}
-
-.us p{}
-
-.us img{}
-
-/* ----------Sec Mandate---------------------- */
-
-.mandate{}
-
-.mandate h3{}
-
-.mandate div{}
-
-.mandate p{}
-
-.mandate img{}
-
-/* ----------History-------------------------- */
-
-.history{}
-
-.history h3{}
-
-.history ul{}
-
-.history ul li{}
-
-.year{}
-
-.year span{}
-
-ul li p{}
-
-.history img{}
-
-/* ----------Land----------------------------- */
-
-.land{}
-
-.land h3{}
-
-.land div{}
-
-.land p{}
-
-.land img{}
-
-/* ----------Law------------------------------ */
-
-.law{}
-
-.law h3{}
-
-.law img{}
-
-.law p{}
-
-/* ----------Navigation----------------------- */
-
-nav{
+.us{
+    position: relative;
     width: 1200px;
-    
-    margin-top: 100px;
+
     margin-bottom: 100px;
 }
 
-nav ul{
+.us h2{
+    position: absolute;
+    top: -135px;
+    left: 2px;
+}
+
+.us p{
+    width: 855px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 120px;
+
+    font-size: 32px;
+}
+
+.us img{
+    position: absolute;
+    left: 1100px;
+    top: 215px;
+    z-index: 1;
+}
+
+/* ----------Sec Mandate---------------------- */
+
+.mandate{
+    width: 1200px;
+    height: 1005px;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.mandate h3{
+    position: absolute;
+    top: 92px;
+    left: 242px;
+}
+
+.mandate .bgi{
+    /* position: absolute;
+    left: 120px; */
+    opacity: 0.5;
+}
+
+.mandate div{
+    background-color: #f6f6f6;
+    width: 595px;
+    height: 760px;
+
+    position: absolute;
+    left: 242px;
+    top: 245px;
+}
+
+.mandate p{
+    width: 550px;
+    color: black;
+    font-size: 24px;
+    line-height: 1.6;
+
+    position: absolute;
+    left: 270px;
+    top: 260px;
+}
+
+.m_arrow{
+    position: absolute;
+    top: 1080px;
+    left: 386px;
+    z-index: 1;
+}
+
+/* ----------History-------------------------- */
+
+.history{
+    position: relative;
+    width: 1200px;
+    height: 1120px;
+    /* margin-left: 120px; */
+    margin-bottom: 150px;
+}
+
+.history h3{
+    position: absolute;
+    left: 908px;
+}
+
+.history ol{
     
 }
 
-nav ul li{
+.history ul li{
+    color: #f6f6f6;
     display: block;
-    text-align: center;
 }
 
-nav ul li a{
+.year{
+    font-size: 96px;
+}
+
+.year span{
+    font-size: 128px;
+}
+
+ol p{
+    font-size: 24px;
+}
+
+.y2015{
+    position: absolute;
+    top: 100px;
+    left: 460px;
+}
+
+.y2015 + p{
+    position: absolute;
+    top: 166px;
+    left: 750px;
+}
+
+.y2016{
+    position: absolute;
+    top: 250px;
+    left: 555px;
+}
+
+.y2016 + p{
+    text-align: right;
+
+    position: absolute;
+    top: 316px;
+    left: 120px;
+}
+
+.y2017{
+    position: absolute;
+    top: 400px;
+    left: 340px;
+}
+
+.y2017 + p{
+    position: absolute;
+    top: 490px;
+    left: 640px;
+}
+
+.y2018{
+    position: absolute;
+    top: 550px;
+    left: 470px;
+}
+
+.y2018 + p{
+    text-align: right;
+
+    position: absolute;
+    top: 616px;
+    left: 15px;
+}
+
+.y2019{
+    position: absolute;
+    top: 700px;
+    left: 290px;
+}
+
+.y2019 + p{
+    /* text-align: right; */
+
+    position: absolute;
+    top: 742px;
+    left: 590px;
+}
+
+.y2020{
+    position: absolute;
+    top: 850px;
+    left: 510px;
+}
+
+.y2020 + p{
+    text-align: right;
+
+    position: absolute;
+    top: 916px;
+    left: 315px;
+}
+
+.y2021{
+    position: absolute;
+    top: 1000px;
+    left: 385px;
+}
+
+.y2021 + p{
+    /* text-align: right; */
+
+    position: absolute;
+    top: 1090px;
+    left: 660px;
+}
+
+.history img{
+    position: absolute;
+    top: 1090px;
+    left: 200px;
+}
+
+/* ----------Land----------------------------- */
+
+.land{
+    width: 1200px;
+    height: 630px;
+    margin-bottom: 200px;
+    /* margin-left: 120px; */
+
+    position: relative;
+}
+
+.land h3{
+    
+}
+
+h3>span{
+    color: black;
+}
+
+.land div{
+    background-color: #f6f6f6;
+    width: 620px;
+    height: 620px;
+
+    position: absolute;
+    top: 10px;
+    left: 375px;
+    z-index: -1;
+}
+
+.land p{
+    width: 550px;
+    color: black;
+    font-size: 24px;
+    line-height: 1.6;
+
+    position: absolute;
+    top: 140px;
+    left: 417px;
+}
+
+.land img{
+    position: absolute;
+    top: 600px;
+    left: 1090px;
+}
+
+/* ----------Law------------------------------ */
+
+.tech{
+    width: 1200px;
+    /* margin-left: 120px; */
+    margin-bottom: 150px;
+
+    position: relative;
+}
+
+.tech h3{
+    text-align: right;
+
+    position: absolute;
+    left: 500px;
+    z-index: 1;
+
+}
+
+.tech img{
+    opacity: 0.5;
+
+    margin-left: 180px;
+}
+
+.tech p{
+    width: 550px;
+    color: #f6f6f6;
+    font-size: 24px;
+    line-height: 1.6;
+
+    position: absolute;
+    top: 220px;
+    z-index: 1;
+}
+
+/* ----------Navigation----------------------- */
+
+.btt{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* margin-left: 120px; */
+}
+
+.btt li{
+    display: block;
+    text-align: center;
+    
+}
+
+.btt li a{
     color: #f6f6f6;
     font-size: 36px;
 }
 
-nav ul li img{
+.btt li img{
     width: 78.18px;
     height: 90px;
 
@@ -191,6 +495,8 @@ nav ul li img{
 
 footer{
     width: 1200px;
+    margin: 0 auto;
+    /* margin-left: 120px; */
 
     position: relative;
 }
@@ -211,13 +517,13 @@ footer{
     left: 400px;
 }
 
-footer ul{
+.media>ol{
     margin-right: 77px;
+    
 }
 
-footer ul li{}
 
-footer ul li a{
+.media li a{
     display: inline-block;
     float: right;
     margin-left: 10px;
@@ -225,10 +531,11 @@ footer ul li a{
 
 }
 
-footer ul li img{
+.media li img{
     width: 51px;
     height: 51px;
     margin-bottom: 30px;
+    z-index: 1;
     
 }
 

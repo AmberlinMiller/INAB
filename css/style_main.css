@@ -32,8 +32,16 @@ a{
 }
 
 /* --------------Header--------------------- */
-head{
+header{
+    width: 1200px;
     position: relative;
+
+    margin: 0 auto;
+}
+
+header>h1{
+    width: 762px;
+    display: block;
 }
 
 h2{
@@ -56,6 +64,8 @@ video{
     width: 72px;
     height: 100px;
 
+
+
     margin-left: 10px;
 }
 
@@ -66,7 +76,9 @@ video{
     width: 1200px;
     height: 620px;
 
+    margin: 0 auto;
     margin-top: 50px;
+    
 }
 
 .ad :hover{
@@ -88,6 +100,7 @@ video{
 .container_play{
     width: 1200px;
     height: 520px;
+    margin: 0 auto;
     margin-top: 50px;
 
     position: relative;
@@ -148,6 +161,7 @@ video{
 .container_know{
     width: 1200px;
     height: 520px;
+    margin: 0 auto;
     margin-top: 100px;
 
     position: relative;
@@ -214,6 +228,7 @@ video{
 nav{
     width: 1200px;
     
+    margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -243,6 +258,7 @@ nav ul li img{
 
 footer{
     width: 1200px;
+    margin: 0 auto;
 
     position: relative;
 }
