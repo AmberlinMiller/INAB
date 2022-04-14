@@ -28,32 +28,31 @@
 
         </section>
 
-        <nav class="burger">
-            <div >
-                <a href="main.html">HOME</a>
-                <p>/</p>
-                <a href="about.html">ABOUT US</a>
-                <a class="list" href="#">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <ul>
-                        <li><a href="main.html">HOME</a></li>
-                        <li><a href="artists.html">ARTISTS</a></li>
-                        <li><a href="isolata.html">ISOLATA</a></li>
-                        <li class="overhear"><a href="overhear.html">OVERHEAR</a></li>
-                        <li><a href="overhear.html">OVERHEAR SOLO</a></li>
-                        <li><a href="reservation.html">RESERVATION</a></li>
-                        <li><a href="contact_us.html">CONTACT US</a></li>
-
-                    </ul>
-                </a>
-            </div>
-            
-        </nav>
-
     </header>
 
+    <aside>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="main.html">HOME</a>
+          <a href="artists.html">ARTISTS</a>
+          <a href="#" class="overhear">OVERHEAR</a>
+          <a href="overhear.html">OVERHEAR SOLO</a>
+          <a href="isolata.html">ISOLATA</a>
+          <a href="reservation.html">RESERVATION</a>
+          <a href="contact_us.html">CONTACT US</a>
+        </div>
+      
+        <div class="fprint">
+            <a href="main.html">HOME</a>
+            <p>/<p>
+            <a href="about.html">ABOUT</a>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        
+    </aside>
+      
+
+    
     <main>
         
         <section class="us">
@@ -162,7 +161,7 @@
 
         <ol>
             <li><a href="#">Back to Top</a></li>
-            <li><a href="#"><img src="img/logos/logo_white.svg" alt=""></a></li>
+            <li><a href="main.html"><img src="img/logos/logo_white.svg" alt=""></a></li>
         </ol>
 
     </nav>
@@ -182,6 +181,8 @@
         <p>&copy; THIS IS A CLASS PROJECT | DESIGNED BY AMBERLIN MILLER</p>
 
     </footer>
+
+    <script src="js/about.js"></script>
         
 </body>
 </html>

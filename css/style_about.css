@@ -1,7 +1,6 @@
 @import url("reset.css");
 
 body{
-
     background-color: black;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -25,16 +24,15 @@ h4{
     font-size: 48px;
 }
 
-a{
+/* a{
     color: black;
     font-size: 50px;
     text-decoration: none;
-}
+} */
 
 /* ----------Header--------------------------- */
-
 header{
-    width: 1440px;
+    width: 1200px;
     margin: 0 auto;
     position: relative;
     
@@ -49,13 +47,16 @@ h1{
 
 header h3{
     position: absolute;
-    top: 696px;
-    left: 464px;
+    bottom: -5px;
+    right: -2px;
 
     width: 978px;
 }
 
-.pic_slid{}
+.pic_slid img{
+    width: 100%;
+    height: auto;
+}
 
 .left{
     position: absolute;
@@ -83,78 +84,71 @@ img{
     opacity: 1;
 }
 
-/* ----------Navigation----------------------- */
-
-.burger{
-    width: 1440px;
-
+/* ----------Menu----------------------- */
+.fprint{
+    width: 174px;
     position: fixed;
-    top: 80px;
-    right: -1088px;
-
-    z-index: 1;
+    top: 70px;
+    right: 120px;
+    z-index: 2;
 }
 
-.burger div a{
-    color: #5e5c5c;
-    font-size: 16px;
-}
-
-.burger a:hover{
-    color: #f6f6f6;
-}
-
-.burger div p{
-    color: #5e5c5c;
-
+.fprint a{
+	font-size: 16px;
+    color:#5e5c5c;
+    text-decoration: none;
+    
+    margin-left:10px;
+    }
+    
+.fprint p{
+	font-size: 16px;
+    color:#5e5c5c;
+    text-decoration: none;
     display: inline-block;
+    }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
 }
 
-.list{
-    display: inline-block;
-}
-
-.list div{
-    width: 40px;
-    height: 6px;
-    background-color: #5e5c5c;
-    margin-top: 6px;
-}
-
-ul{
-    background-color: #f6f6f615;
-    
-    width: 170px;
-    height: 100%;
-
-    padding-top: 5px;
-    padding-bottom: 20px;
-    margin-top: 10px;
-    margin-left: 29px;
-
-    display: none;
-    
-}
-
-.burger a ul:hover{
-    
-}
-
-.burger ul li{
-    margin-top: 10px;
-}
-
-.burger ul li a{
-    color: #5e5c5c;
-    font-size: 16px;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 
 }
 
-.burger ul li a:hover{}
-
-.overhear{
-    display: hidden;
+.sidenav a:hover{
+  color: #f1f1f1;
 }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 
 /* ----------Main----------------------------- */
 
@@ -174,7 +168,7 @@ main{
 
 .us h2{
     position: absolute;
-    top: -135px;
+    top: -215px;
     left: 2px;
 }
 
@@ -183,7 +177,7 @@ main{
     line-height: 1.6;
     text-align: center;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 200px;
 
     font-size: 32px;
 }
@@ -191,7 +185,7 @@ main{
 .us img{
     position: absolute;
     left: 1100px;
-    top: 215px;
+    top: 310px;
     z-index: 1;
 }
 
@@ -427,7 +421,7 @@ h3>span{
     left: 1090px;
 }
 
-/* ----------Law------------------------------ */
+/* ----------Tech------------------------------ */
 
 .tech{
     width: 1200px;
@@ -482,6 +476,7 @@ h3>span{
 .btt li a{
     color: #f6f6f6;
     font-size: 36px;
+    text-decoration: none;
 }
 
 .btt li img{
@@ -506,7 +501,6 @@ footer{
     height: 55px;
 
     position: absolute;
-    left: 78px;
 }
 
 .sab_logo{
@@ -514,7 +508,7 @@ footer{
     height: 55px;
 
     position: absolute;
-    left: 400px;
+    left: 350px;
 }
 
 .media>ol{
