@@ -34,6 +34,8 @@ a{
 /* --------------Header--------------------- */
 header{
     width: 1200px;
+    height: 705px;
+    /* border: 1px solid white; */
     position: relative;
 
     margin: 0 auto;
@@ -42,6 +44,9 @@ header{
 header>h1{
     width: 762px;
     display: block;
+    position: absolute;
+    top: -13px;
+    left: -8px;
 }
 
 h2{
@@ -51,22 +56,25 @@ h2{
     /* border: 2px solid #f6f6f6; */
 
     position: absolute;
-    top: 281px;
-    left: 870px;
+    top: 310px;
+    left: 935px;
 }
 
 video{
     width: 1049px;
     height: 576px;
+
+    position: absolute;
+    bottom: 0;
 }
 
 .title_logo{
     width: 72px;
     height: 100px;
 
-
-
-    margin-left: 10px;
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
 }
 
 /* --------------Ad------------------------- */

@@ -65,10 +65,10 @@ header img{
 
 /* ------------Menu---------------- */
 .fprint{
-    width: 174px;
+    width: 206px;
     position: fixed;
     top: 70px;
-    right: 120px;
+    right: 0px;
     z-index: 2;
 }
 
@@ -141,6 +141,8 @@ section{
     position: absolute;
     left: 90px;
     top: 2px;
+
+     opacity: 0.5;
 }
 
 .show1:disabled{

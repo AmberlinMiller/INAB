@@ -61,7 +61,7 @@ header h3{
 .left{
     position: absolute;
     left: 120px;
-    top: 335px;
+    top: 290px;
     opacity: 0.5;
 }
 
@@ -75,8 +75,8 @@ img{
 
 .right{
     position: absolute;
-    left: 1240px;
-    top: 335px;
+    right: 120px;
+    top: 290px;
     opacity: 0.5;
 }
 
@@ -89,7 +89,7 @@ img{
     width: 174px;
     position: fixed;
     top: 70px;
-    right: 120px;
+    right: 0px;
     z-index: 2;
 }
 
