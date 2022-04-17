@@ -9,6 +9,13 @@
 </head>
 <body>
 
+    <!-- Header -------------------------->
+    <header>
+
+        <h1>RESERVATION</h1>
+
+    </header>
+
     <!-- Burger Menu --------------------->
     <aside>
         <div id="mySidenav" class="sidenav">
@@ -25,11 +32,107 @@
         <div class="fprint">
             <a href="main.html">HOME</a>
             <p>/<p>
-            <a href="./isolata.html">ISOLATA</a>
+            <a href="./reservation.html">RESERVATION</a>
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
         
     </aside>
+
+    <!-- Form --------------------------->
+    <main>
+        <ul>
+
+            <!-- Name -->
+            <li>
+                <p>NAME</p>
+                <input class="name" type="text" placeholder="FIRST NAME">
+            </li>
+            <li>
+                <p></p>
+                <input class="last_name"type="text" placeholder="LAST NAME">
+            </li>
+            <!-- Pronoun -->
+            <li>
+                <p>PRONOUN</p>
+                <input class="pronoun" type="text">
+            </li>
+            <!-- E-main -->
+            <li>
+                <p>E-MAIL</p>
+                <input class="email" type="email">
+            </li>
+            <!-- Phone # -->
+            <li>
+                <p>PHONE NUMBER</p>
+                <input class="phone" type="text">
+            </li>
+            <!-- Select Date -->
+            <li>
+                <p>SELECT DATE</p>
+                <select name="select_date" id="date">
+                    <option value="" selected>PLEASE SELECT A DATE</option>
+                    <option value="1">MAY, 15TH, 2027</option>
+                    <option value="2">MAY, 16TH, 2027</option>
+                </select>
+            </li>
+            <!-- # of Tickets -->
+            <li>
+                <p>NUMBER OF TICKETS</p>
+                <select name="number_ticket" id="ticket">
+                    <option value="">QUANTITY</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </li>
+            <!-- More than 2 -->
+            <li>
+                <p class="more">&#42; PLEASE CONTACT US IF YOU WOULD LIKE TO BOOK MORE THAN 2 TICKETS</p>
+            </li>
+            <!-- Select Time Slot -->
+            <li>
+                <p>SELECT TIME</p>
+                <select name="select_time" id="time">
+                    <option value="">PLEASE SELECT TIME</option>
+                    <option value="1">7:00 P.M.</option>
+                    <option value="2">7:15 P.M.</option>
+                    <option value="3">7:30 P.M.</option>
+                    <option value="4">7:45 P.M.</option>
+                </select>
+            </li>
+            <!-- Cardholder Name -->
+            <li>
+                <p>CREDITCARD INFORMATION</p>
+                <input class="cardholder_1n" type="text" placeholder="FIRST NAME">
+            </li>
+            <!-- Cardholder Last Name -->
+            <li>
+                <p></p>
+                <input class="cardholder_2n" type="text" placeholder="LAST NAME">
+            </li>
+            <!-- Card # -->
+            <li>
+                <p>CREDITCARD NUMBER</p>
+                <input class="card_number" type="text">
+            </li>
+            <!-- Expire Date -->
+            <li>
+                <p>EXPIRE DATE</p>
+                <input class="month" type="text" placeholder="MM">
+                <span>/</span>
+                <input class="year" type="text" placeholder="YY">
+            </li>
+            <!-- CVC -->
+            <li>
+                <p>CVC</p>
+                <input class="cvc" type="text" placeholder="3 DIGITS">
+            </li>
+            <!-- Submit -->
+            <li>
+                <input class="send" type="submit" value="SUBMIT">
+            </li>
+
+        </ul>
+    </main>
 
     <!-- Nav and Footer ------------------->
     <nav class="btt">

@@ -29,13 +29,28 @@ a{
     text-decoration: none;
     color: #f6f6f6;
 }
+/* -------------Header--------------------- */
+header{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+    position: relative;
+}
+
+header h1{
+    position: absolute;
+    top: -13px;
+    left: -4px;
+}
 
 /* -------------Burger Menu---------------- */
 .fprint{
-    width: 188px;
+    width: 231px;
     position: fixed;
     top: 70px;
-    right: 0px;
+    right: 70px;
     z-index: 2;
 }
 
@@ -93,6 +108,119 @@ a{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/* ---------Form---------------------- */
+main{
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url("../img/reservation_bgi.jpg");
+}
+
+main ul{
+    width: 790px;
+    margin: 0 auto;
+}
+
+main ul li{
+    font-size: 24px;
+}
+
+main ul li p{
+    margin-bottom: 20px;
+}
+
+main ul li input{
+    height: 35px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+main ul li select{
+    height: 35px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.name{
+    width: 375px;
+    float: left;
+}
+
+.last_name{
+    width: 375px;
+    margin-left: 24px;
+}
+
+.pronoun{
+    width: 187px;
+}
+
+.email{
+    width: 500px;
+}
+
+.phone{
+    width: 250px;
+}
+
+#date{
+    width: 375px;
+}
+
+#ticket{}
+
+.more{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#time{
+    width: 375px;
+}
+
+.cardholder_1n{
+    width: 375px;
+    float: left;
+}
+
+.cardholder_2n{
+    width: 375px;
+    margin-left: 24px;
+}
+
+.card_number{
+    width: 375px;
+}
+
+.month{
+    width: 100px;
+}
+
+.year{
+    width: 100px;
+}
+
+.cvc{
+    width: 120px;
+}
+
+.send{
+    width: 241px;
+    font-weight: bold;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+
+    margin-left: 267px;;
+    margin-bottom: 40px;
+}
+
+.send:hover{
+    transition: 1s;
+    transform: scale(1.5);
 }
 
 /* ---------Navigation---------------- */

@@ -29,54 +29,27 @@ a{
     text-decoration: none;
     color: #f6f6f6;
 }
-/* ---------Header-------------------- */
+/* ---------Header------------------------- */
 header{
     width: 1200px;
-    height: 740px;
-    /* border: 2px solid white; */
+    height: 90px;
     margin: 0 auto;
-    margin-bottom: 100px;
+
     position: relative;
 }
 
 header h1{
     position: absolute;
     top: -13px;
-    left: -8px;
-
-}
-
-header img{
-    width: 100%;
-    position: absolute;
-    top: 95px;
-    left: 0;
-
-}
-
-header h2{
-    font-size: 128px;
-
-    position: absolute;
-    bottom: 110px;
-    right: 75px;
-}
-
-header p{
-    font-size: 24px;
-    width: 850px;
-
-    position: absolute;
-    bottom: 0;
-    left: 0px;
+    left: -4px;
 }
 
 /* -------------Burger Menu---------------- */
 .fprint{
-    width: 188px;
+    width: 224px;
     position: fixed;
     top: 70px;
-    right: 40px;
+    right: 70px;
     z-index: 2;
 }
 
@@ -136,157 +109,145 @@ header p{
   .sidenav a {font-size: 18px;}
 }
 
-/* ---------Options------------------- */
-section{
+/* ---------Headshot------------------ */
+.headshot{
     width: 1200px;
-    
-    margin: 0 auto;
-    margin-bottom: 100px;
-}
-section div{
-    width: 697px;
-    margin: 0 auto;
-}
-
-section a + p{
-    display: inline-block;
-}
-
-section a{
-    font-size: 48px;
-    margin-left: 100px;
-    margin-right: 100px;
-    
-}
-
-section p{
-    font-size: 48px;
-}
-
-/* ---------Map----------------------- */
-#map{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-#map iframe{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 100px;
-}
-
-/* ---------Main---------------------- */
-#story{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-/* ---------Lauriel------------------- */
-.lauriel{
-    width: 1200px;
-    height: 486px;
+    height: 933px;
     /* border: 2px solid white; */
     margin: 0 auto;
     margin-bottom: 100px;
+    box-sizing: border-box;
 
     position: relative;
 }
 
-h4{
-    position: absolute;
-    top: 9px;
-    left: -4px;
+img{
+    transition: all 2s;
 }
 
-.name{
-    font-size: 48px;
-    display: block;
-    position: absolute;
-    top: 246px;
-    left: 158px;
-    transform: rotate(90deg);
+img:hover{
+    transform: scale(1.2);
 }
 
-.lauriel div{
-    width: 311px;
-    height: 416px;
-    background-color: #f6f6f6;
-
+.amber1{
     position: absolute;
-    top: 70px;
-    left: 0px;
-    z-index: -1;
+    top: 320px;
+    left: 0;
 }
 
-.lauriel img{
+.amber2{
     position: absolute;
-    top: 50px;
-    left: 30px;
+    top: 160px;
+    left: 204px;
 }
 
-.lauriel audio{
+.amber3{
     position: absolute;
-    top: 225px;
-    right: 150px;
-
-    width: 500px;
+    top: 80px;
+    left: 408px;
 }
 
-/* ---------Anonymous----------------- */
-.anonymous{
-    width: 1200px;
-    height: 511px;
-    /* border: 2px solid white; */
-    margin: 0 auto;
-
-    position: relative;;
+.torien1{
+    position: absolute;
+    top: 0;
+    right: 408px;
 }
 
-.anonymous>h4{
+.torien2{
     position: absolute;
-    top: 150px;
-    left: 704px;
-    transform: rotate(-90deg);
+    top: 160px;
+    right: 204px;
 }
 
-.tonight{
+.torien3{
     position: absolute;
-    bottom: 469px;
+    top: 240px;
     right: 0px;
 }
 
-.writer{
-    position: absolute;
-    bottom: -6px;
-    right: -2px;
+/* -----------Description-----------------------*/
+main{
+    width: 1200px;
+    margin: 0 auto;
 }
 
+/* -----------Torien--------------------------- */
+#torien{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    /* border: 2px solid white; */
 
-.anonymous img{
-    position: absolute;
-    bottom: 60px;
-    right: 25px;
+    display: flex;
 }
 
-.anonymous div{
-    width: 311px;
-    height: 416px;
-    background-color: #f6f6f6;
+#torien img{
+    opacity: 0.6;
+    width: 600px;
+    height: 369px;
+    margin: auto 30px;
 
-    position: absolute;
-    bottom: 36px;
-    right: 0;
-    z-index: -1;
+    transition: 1s;
 }
 
-.anonymous audio{
-    width: 500px;
-
-    position: absolute;
-    top: 220px;
-    left: 150px;
+#torien img:hover{
+    transform: rotateY(45deg);
+    transition-timing-function: ease-out;
 }
 
+#torien article{
+    margin: 20px 70px 0 70px;
+}
+
+#torien h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#torien p{
+    width: 400px;
+    height: 250px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* -----------Amberlin------------------------- */
+#amberlin{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    /* border: 2px solid white; */
+
+    display: flex;
+}
+
+#amberlin img{
+    opacity: 0.6;
+    width: 600px;
+    height: 369px;
+    margin: auto 30px;
+
+    transition: all 1s;
+}
+
+#amberlin img:hover{
+    transform: rotateY(-45deg);
+    transition-timing-function: ease-out;
+}
+
+#amberlin article{
+    margin: auto 70px;
+}
+
+#amberlin h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#amberlin p{
+    line-height: 1.6;
+    font-size: 16px;
+}
 /* ---------Navigation---------------- */
 .btt{
     width: 1200px;
@@ -316,7 +277,6 @@ h4{
 }
 
 /* -----------Footer--------------------------- */
-
 footer{
     width: 1200px;
     margin: 0 auto;
@@ -370,3 +330,4 @@ footer p{
     left: 560px;
     top: 35px;
 }
+
