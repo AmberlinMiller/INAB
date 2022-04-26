@@ -9,12 +9,16 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
 
-  // -------Disable a-Life After That--------------------------
-  var disable_a = document.getElementsByClassName("show1")[0];
+// -------Disable a-Life After That--------------------------
+$('.show1').mouseover(function(){
+  $(this).css("cursor", "not-allowed");
+});
+
+var disable_a = document.getElementsByClassName("show1")[0];
 
     // console.log(disable_a);
 
-  disable_a.addEventListener("click", function(eve){
+disable_a.addEventListener("click", function(eve){
     
-    eve.preventDefault();
-  });
+  eve.preventDefault();
+});

@@ -47,7 +47,7 @@ h1{
 
 header h3{
     position: absolute;
-    bottom: -5px;
+    bottom: -6px;
     right: -2px;
 
     width: 978px;
@@ -100,6 +100,10 @@ img{
     
     margin-left:10px;
     }
+
+.fprint a:hover{
+    color: #f6f6f6;
+}
     
 .fprint p{
 	font-size: 16px;
@@ -107,6 +111,11 @@ img{
     text-decoration: none;
     display: inline-block;
     }
+
+.fprint span:hover{
+    color: #f6f6f6;
+}
+
 
 .sidenav {
   height: 100%;
@@ -475,8 +484,13 @@ h3>span{
 
 .btt li a{
     color: #f6f6f6;
+    opacity: 0.6;
     font-size: 36px;
     text-decoration: none;
+}
+
+.btt li a:hover{
+    opacity: 1;
 }
 
 .btt li img{
@@ -521,8 +535,13 @@ footer{
     display: inline-block;
     float: right;
     margin-left: 10px;
-    
+    opacity: 0.6;
+}
 
+.media li a:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 .media li img{

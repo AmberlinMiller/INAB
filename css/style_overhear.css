@@ -63,9 +63,9 @@ header img{
     bottom: 120px;
 }
 
-/* ------------Menu---------------- */
+/* -------------Burger Menu---------------- */
 .fprint{
-    width: 206px;
+    width: 224px;
     position: fixed;
     top: 70px;
     right: 70px;
@@ -79,6 +79,10 @@ header img{
     
     margin-left:10px;
     }
+
+.fprint a:hover{
+    color: #f6f6f6;
+}
     
 .fprint p{
 	font-size: 16px;
@@ -87,6 +91,11 @@ header img{
     display: inline-block;
     }
 
+.fprint span:hover{
+    color: #f6f6f6;
+}
+
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -94,7 +103,7 @@ header img{
   z-index: 3;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: black;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -112,7 +121,7 @@ header img{
 }
 
 .sidenav a:hover{
-  color: #f1f1f1;
+  color: #f6f6f6;
 }
 
 .sidenav .closebtn {
@@ -127,6 +136,7 @@ header img{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 
 /* ---------Shows-------------------- */
 section{
@@ -194,8 +204,13 @@ section p{
 
 .btt li a{
     color: #f6f6f6;
+    opacity: 0.6;
     font-size: 36px;
     text-decoration: none;
+}
+
+.btt li a:hover{
+    opacity: 1;
 }
 
 .btt li img{
@@ -231,17 +246,20 @@ footer{
 }
 
 .media>ol{
-    margin-right: 77px;
-    
+    margin-right: 77px;  
 }
-
 
 .media li a{
     display: inline-block;
     float: right;
     margin-left: 10px;
-    
+    opacity: 0.6;
+}
 
+.media li a:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 .media li img{

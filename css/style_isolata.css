@@ -60,13 +60,13 @@ header p{
     margin: 0 auto;
 }
 
-/* ------------Burger Menu---------------- */
+/* -------------Burger Menu---------------- */
 .fprint{
-    width: 188px;
+    width: 224px;
     position: fixed;
     top: 70px;
     right: 70px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .fprint a{
@@ -76,6 +76,10 @@ header p{
     
     margin-left:10px;
     }
+
+.fprint a:hover{
+    color: #f6f6f6;
+}
     
 .fprint p{
 	font-size: 16px;
@@ -84,6 +88,11 @@ header p{
     display: inline-block;
     }
 
+.fprint span:hover{
+    color: #f6f6f6;
+}
+
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -91,7 +100,7 @@ header p{
   z-index: 3;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: black;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -109,7 +118,7 @@ header p{
 }
 
 .sidenav a:hover{
-  color: #f1f1f1;
+  color: #f6f6f6;
 }
 
 .sidenav .closebtn {
@@ -166,14 +175,16 @@ article p{
 
 #rd_btn{
     font-size: 18px;
+    font-weight: bold;
     color: #f6f6f6;
     background-color: Black;
-    border: 0;
-    padding: 0;
+    border: 2px solid #f6f6f6;
+    padding: 0 5px;
     margin-bottom: 20px;
 }
 
 #rd_btn:hover{
+    cursor: pointer;
     color: black;
     background-color: #f6f6f6;
     border-radius: 2px;
@@ -246,8 +257,13 @@ article p{
 
 .btt li a{
     color: #f6f6f6;
+    opacity: 0.6;
     font-size: 36px;
     text-decoration: none;
+}
+
+.btt li a:hover{
+    opacity: 1;
 }
 
 .btt li img{
@@ -283,17 +299,20 @@ footer{
 }
 
 .media>ol{
-    margin-right: 77px;
-    
+    margin-right: 77px;  
 }
-
 
 .media li a{
     display: inline-block;
     float: right;
     margin-left: 10px;
-    
+    opacity: 0.6;
+}
 
+.media li a:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 .media li img{

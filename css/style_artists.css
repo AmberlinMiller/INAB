@@ -50,7 +50,7 @@ header h1{
     position: fixed;
     top: 70px;
     right: 70px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .fprint a{
@@ -60,6 +60,10 @@ header h1{
     
     margin-left:10px;
     }
+
+.fprint a:hover{
+    color: #f6f6f6;
+}
     
 .fprint p{
 	font-size: 16px;
@@ -68,6 +72,11 @@ header h1{
     display: inline-block;
     }
 
+.fprint span:hover{
+    color: #f6f6f6;
+}
+
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -75,7 +84,7 @@ header h1{
   z-index: 3;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: black;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -93,7 +102,7 @@ header h1{
 }
 
 .sidenav a:hover{
-  color: #f1f1f1;
+  color: #f6f6f6;
 }
 
 .sidenav .closebtn {
@@ -121,11 +130,11 @@ header h1{
     position: relative;
 }
 
-img{
+a img{
     transition: all 2s;
 }
 
-img:hover{
+.headshot a img:hover{
     transform: scale(1.2);
 }
 
@@ -227,7 +236,7 @@ main{
     height: 369px;
     margin: auto 30px;
 
-    transition: all 1s;
+    transition: 1s;
 }
 
 #amberlin img:hover{
@@ -265,8 +274,13 @@ main{
 
 .btt li a{
     color: #f6f6f6;
+    opacity: 0.6;
     font-size: 36px;
     text-decoration: none;
+}
+
+.btt li a:hover{
+    opacity: 1;
 }
 
 .btt li img{
@@ -277,6 +291,7 @@ main{
 }
 
 /* -----------Footer--------------------------- */
+
 footer{
     width: 1200px;
     margin: 0 auto;
@@ -300,18 +315,21 @@ footer{
     left: 350px;
 }
 
-.media>ol{
-    margin-right: 77px;
-    
+.media > ol{
+    margin-right: 77px;  
 }
 
-
-.media li a{
+.media > li a{
     display: inline-block;
     float: right;
     margin-left: 10px;
-    
+    opacity: 0.6;
+}
 
+.media > li a:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 .media li img{

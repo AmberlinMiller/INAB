@@ -1,14 +1,5 @@
 "use strict"
 
-// ---------Burger Menu--------------------
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-
 // --------Read More-----------------------
 function my_Function() {
     var dots = document.getElementById("dots");
