@@ -58,6 +58,7 @@ header p{
 }
 
 header img{
+    max-width: 100%;
     z-index: -1;
     position: absolute;
     bottom: 120px;
@@ -215,7 +216,7 @@ section p{
 
 .btt li img{
     width: 78.18px;
-    height: 90px;
+    /* height: 90px; */
 
     margin-top: 10px;
 }
@@ -232,17 +233,17 @@ footer{
 
 .cca_logo{
     width: 294px;
-    height: 55px;
+    /* height: 55px; */
 
     position: absolute;
 }
 
 .sab_logo{
     width: 80px;
-    height: 55px;
+    /* height: 55px; */
 
     position: absolute;
-    left: 350px;
+    left: 30%;
 }
 
 .media>ol{
@@ -264,7 +265,7 @@ footer{
 
 .media li img{
     width: 51px;
-    height: 51px;
+    /* height: 51px; */
     margin-bottom: 30px;
     z-index: 1;
     
@@ -275,6 +276,324 @@ footer p{
     font-size: 12px;
 
     position: absolute;
-    left: 560px;
+    left: 48%;
     top: 35px;
+}
+
+/* ---------Media Query------------------------------------- */
+@media screen and (max-width: 1219px){
+    body{
+        max-width: 100%;
+    }
+
+    /* --------Burger Menu----- */
+    .fprint{
+       top: 17vw;
+       right: -10vw;
+    }
+    .fprint a{
+        display: none;
+        }
+        
+    .fprint a+p{
+        display: none;
+        }
+
+    /* ---------Header--------- */
+    header{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    header h1{
+        font-size: 17vw;
+        position: static;
+        text-align: center;
+        order: 1;
+    }
+
+    header h3{
+        font-size: 8vw;
+        position: static;
+        order: 3;
+        text-align: center;
+        margin: 20px auto;
+    }
+    
+    header p{
+        position: static;
+        font-size: 5vw;
+        text-align: center;
+        order: 4;
+        margin: 0 auto 20px;
+    }
+    
+    header img{
+        max-width: 100%;
+        z-index: -1;
+        position: static;
+        display: block;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    /* ---------Section--------- */
+    section{
+        max-width: calc(100% - 50px);
+    }
+
+    .show1{
+        vertical-align: middle;
+        font-size: 2.5vw;
+        position: static;
+        opacity: 0.5;
+        display: inline-block;
+        text-align: center;
+        margin-left: 14vw;
+    }
+    
+    .show2{
+        vertical-align: middle;
+        font-size: 2.5vw;
+        position: static;
+        display: inline-block;
+        text-align: center;
+        margin-left: 10vw;
+    }
+    
+    section p{
+        vertical-align: top;
+        display: inline-block;
+        margin: 0 11%;
+        font-size: 3vw;
+    }
+
+    .show1-b{
+        max-width: 40%;
+        left: 5%;
+    }
+
+    .show2-b{
+        max-width: 40%;
+        right: 5%;
+        /* top: 93px; */
+    }
+
+    /* --------Nav-------------- */
+    .btt{
+        max-width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .btt li{
+        display: block;
+        text-align: center;
+    }
+    
+    .btt li a{
+        color: #f6f6f6;
+        opacity: 0.6;
+        font-size: 3vw;
+        text-decoration: none;
+    }
+    
+    .btt li img{
+        width: 10%;
+        margin-top: 10px;
+    }
+
+    /* ---------Footer---------- */
+
+    footer{
+        max-width: calc(100% - 10%);
+
+    }
+
+    .cca_logo{
+        max-width: 24vw;
+        /* margin-top: 16px; */
+    }
+
+    .sab_logo{
+      max-width: 6vw;  
+    }
+
+
+    .media li a img{
+        max-width: 6vw;
+        /* margin-bottom: 0;
+        margin-top: 7px; */
+    }
+
+    footer p{
+        left: 40%;
+    }
+}
+/* --------------843px------------------------------------ */
+@media (max-width: 845px){
+    footer p{
+        left: 0;
+        /* left: 10vw; */
+        top: 7vh;
+    }
+}
+
+/* --------------415px------------------------------------ */
+@media screen and (max-width: 415px){
+    body{
+        max-width: 100%;
+    }
+
+    /* --------Burger Menu----- */
+    .fprint{
+        top: 60px;
+        right: -190px;
+    }
+    .fprint a{
+        display: none;
+        }
+        
+    .fprint a+p{
+        display: none;
+        }
+
+    /* ---------Header--------- */
+    header{
+        max-width: 100%;
+        height: 450px;
+        margin-bottom: 20px;
+    }
+
+    header h1{
+        font-size: 16vw;
+        position: static;
+        text-align: center;
+    }
+
+    header h3{
+        font-size: 12vw;
+        right: 27%;
+        /* position: static; */
+
+    }
+    
+    header p{
+        font-size: 5vw;
+        /* position: static; */
+        top: 400px;
+        right: 5%;
+        text-align: center;
+    }
+    
+    header img{
+        max-width: 100%;
+        z-index: -1;
+        position: static;
+    }
+
+    /* ---------Section--------- */
+    section{
+        max-width: 100%;
+    }
+
+    .show1{
+        font-size: 7vw;
+        position: static;
+         opacity: 0.5;
+         display: block;
+         text-align: center;
+         margin: 50px;
+    }
+    
+    .show2{
+        font-size: 7vw;
+        position: static;
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    section p{
+        display: none;
+    }
+
+    .show1-b{
+        max-width: 80%;
+        left: 10%;
+    }
+
+    .show2-b{
+        max-width: 80%;
+        right: 10%;
+        top: 93px;
+    }
+
+    /* --------Nav-------------- */
+    .btt{
+        max-width: 100%;
+    }
+
+    .btt li{
+        display: block;
+        text-align: center;
+    }
+    
+    .btt li a{
+        color: #f6f6f6;
+        opacity: 0.6;
+        font-size: 4vw;
+        text-decoration: none;
+    }
+    
+    .btt li img{
+        width: 10%;
+        margin-top: 10px;
+    }
+
+    /* ---------Footer---------- */
+
+    footer{
+        max-width: 100%;
+
+        /* position: static; */
+    }
+
+    .cca_logo{
+        /* max-height: 3vh; */
+        left: 5%;
+    }
+
+    .sab_logo{
+        /* max-height: 3vh; */
+        left: 42%;
+    }
+
+    .media{
+        margin-right: 5%;
+    }
+
+    .media li a{
+        /* display: inline; */
+        margin-left: 10px;
+        opacity: 1;
+    }
+
+    .media li img{
+        max-height: 3vh;
+        margin-bottom: 0px;
+        z-index: 1;
+        
+    }
+
+    footer p{
+        /* display: none; */
+        left: 12%;
+        /* transform: translateX(-50%); */
+        top: 4vh;
+        font-size: 2vw;
+    }
 }

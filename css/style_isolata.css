@@ -139,14 +139,12 @@ header p{
     width: 1200px;
     margin: 0 auto;
     margin-bottom: 100px;
-    
     /* border: 2px solid white; */
 }
 
 .drowned img{
     width: 500px;
-    height: 634px;
-
+    /* height: 634px; */
 }
 
 article{
@@ -156,7 +154,7 @@ article{
     font-size: 16px;
     line-height: 1.6;
 
-    margin-top: 40px;
+    margin-top: 5%;
     margin-right: 30px;
 }
 
@@ -230,7 +228,7 @@ article p{
 
 .void img{
     width: 500px;
-    height: 634px;
+    /* height: 634px; */
     float: right;
 }
 
@@ -268,7 +266,7 @@ article p{
 
 .btt li img{
     width: 78.18px;
-    height: 90px;
+    /* height: 90px; */
 
     margin-top: 10px;
 }
@@ -285,17 +283,17 @@ footer{
 
 .cca_logo{
     width: 294px;
-    height: 55px;
+    /* height: 55px; */
 
     position: absolute;
 }
 
 .sab_logo{
     width: 80px;
-    height: 55px;
+    /* height: 55px; */
 
     position: absolute;
-    left: 350px;
+    left: 30%;
 }
 
 .media>ol{
@@ -317,7 +315,7 @@ footer{
 
 .media li img{
     width: 51px;
-    height: 51px;
+    /* height: 51px; */
     margin-bottom: 30px;
     z-index: 1;
     
@@ -330,4 +328,220 @@ footer p{
     position: absolute;
     left: 560px;
     top: 35px;
+}
+
+/* ---------Media Query------------------------------------- */
+@media screen and (max-width: 1219px){
+    body{
+        max-width: 100%;
+    }
+
+    /* --------Burger Menu----- */
+    .fprint{
+       top: 17vw;
+       right: -10vw;
+    }
+    .fprint a{
+        display: none;
+        }
+        
+    .fprint a+p{
+        display: none;
+        }
+
+    /* ---------Header--------- */
+    header{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    header h1{
+        font-size: 17vw;
+        position: static;
+        text-align: center;
+        order: 1;
+    }
+
+    header img{
+        position: static;
+        margin-top: 0;
+        order: 2;
+    }
+    
+    header p{
+        position: static;
+        font-size: 2vw;
+        text-align: center;
+        order: 3;
+        max-width: 95%;
+    }
+
+    /* ------------Drowned-------------------- */
+    .drowned{
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+
+    .drowned img{
+        max-width: 60%;
+    }
+
+    article{
+        max-width: 40%;
+        font-size: 1.5vw;
+        margin-right: 0;
+    }
+
+    #rd_btn{
+        font-size: 1.5vw;
+    }
+
+    .drowned a{
+        font-size: 1.5vw;
+        max-width: 50%;
+        /* margin: 0 auto; */
+    }
+
+   /* ------------Void----------------------- */
+    .void{
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        position: relative;
+
+        height: 600px;
+        max-height: 100%;
+    }
+
+    .void p{
+        font-size: 6vw;
+        margin: 0;
+        border: 2px solid white;
+        padding: 5px;
+
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .void img{
+        max-width: 60%;
+        float: none;
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+   /* --------Nav-------------- */
+   .btt{
+    max-width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    }
+
+    .btt li{
+        display: block;
+        text-align: center;
+    }
+
+    .btt li a{
+        color: #f6f6f6;
+        opacity: 0.6;
+        font-size: 3vw;
+        text-decoration: none;
+    }
+
+    .btt li img{
+        width: 10%;
+        margin-top: 10px;
+    }
+
+    /* ---------Footer---------- */
+
+    footer{
+        max-width: calc(100% - 10%);
+
+    }
+
+    .cca_logo{
+        max-width: 24vw;
+        /* margin-top: 16px; */
+    }
+
+    .sab_logo{
+    max-width: 6vw; 
+    }
+
+
+    .media li a img{
+        max-width: 6vw;
+        /* margin-bottom: 0;
+        margin-top: 7px; */
+    }
+
+    footer p{
+        left: 40%;
+    }
+}
+
+/* ------845px-------------------------- */
+@media screen and (max-width: 845px){
+
+    .fprint{
+        top: 17vw;
+        right: -20vw;
+     }
+
+    footer p{
+        left: 0;
+        /* left: 10vw; */
+        top: 7vh;
+    }
+
+}
+
+/* --------------415px------------------------------------ */
+@media screen and (max-width: 415px){
+    body{
+        max-width: 100%;
+    }
+
+    header h1{
+        font-size: 19vw;
+        text-align: center;
+    }
+
+    .void{
+        height: 100%;
+    }
+
+    /* --------Burger Menu----- */
+    .fprint{
+        top: 60px;
+        right: -190px;
+    }
+    .fprint a{
+        display: none;
+        }
+        
+    .fprint a+p{
+        display: none;
+        }
+
+    footer p{
+        font-size: 2vw;
+        left: 10%;
+        top: 4vh;
+        /* left: 50%;
+        transform: translateX(-50%); */
+    }
+
 }

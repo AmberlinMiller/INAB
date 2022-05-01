@@ -266,7 +266,7 @@ main ul li select{
 
 .btt li img{
     width: 78.18px;
-    height: 90px;
+    /* height: 90px; */
 
     margin-top: 10px;
 }
@@ -283,17 +283,17 @@ footer{
 
 .cca_logo{
     width: 294px;
-    height: 55px;
+    /* height: 55px; */
 
     position: absolute;
 }
 
 .sab_logo{
     width: 80px;
-    height: 55px;
+    /* height: 55px; */
 
     position: absolute;
-    left: 350px;
+    left: 30%;
 }
 
 .media>ol{
@@ -317,7 +317,7 @@ footer{
 
 .media li img{
     width: 51px;
-    height: 51px;
+    /* height: 51px; */
     margin-bottom: 30px;
     z-index: 1;
     
@@ -331,3 +331,202 @@ footer p{
     left: 560px;
     top: 35px;
 }
+
+/* ---------Media Query------------------------------------- */
+@media screen and (max-width: 1219px){
+    body{
+        max-width: 100%;
+    }
+
+    /* --------Burger Menu----- */
+    .fprint{
+       top: 17vw;
+       right: -10vw;
+    }
+    .fprint a{
+        display: none;
+        }
+        
+    .fprint a+p{
+        display: none;
+        }
+
+    /* ---------Header--------- */
+    header{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    header h1{
+        font-size: 13.5vw;
+        position: static;
+        text-align: center;
+        order: 1;
+    }
+
+    /* ---------Main----------- */
+    main{
+        max-width: 100%;
+    }
+
+    main ul{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    main ul li{
+        /* font-size: 3vw; */
+    }
+    
+    main ul li p{
+        margin-bottom: 10PX;
+    }
+    
+    main ul li input{
+        height: 5vh;
+        opacity: 0.8;
+        margin-bottom: 20px;
+        font-size: 2vw;
+
+        max-width: 90%;
+    }
+    
+    main ul li select{
+        height: 5vh;
+        opacity: 0.8;
+        margin-bottom: 20px;
+        font-size: 2vw;
+
+        max-width: 90%;
+    }
+    
+    .more{
+        font-size: 2vw;
+    }
+    
+    .send{
+        max-width: 100%;
+        display: block;
+        margin: 10px auto;
+    } 
+
+    /* --------Nav-------------- */
+    .btt{
+        max-width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .btt li{
+        display: block;
+        text-align: center;
+    }
+    
+    .btt li a{
+        color: #f6f6f6;
+        opacity: 0.6;
+        font-size: 3vw;
+        text-decoration: none;
+    }
+    
+    .btt li img{
+        width: 10%;
+        margin-top: 10px;
+    }
+
+    /* ---------Footer---------- */
+
+    footer{
+        max-width: calc(100% - 10%);
+
+    }
+
+    .cca_logo{
+        max-width: 24vw;
+        /* margin-top: 16px; */
+    }
+
+    .sab_logo{
+      max-width: 6vw; 
+    }
+
+
+    .media li a img{
+        max-width: 6vw;
+        /* margin-bottom: 0;
+        margin-top: 7px; */
+    }
+
+    footer p{
+        left: 40%;
+    }
+}
+/* --------------843px------------------------------------ */
+@media (max-width: 845px){
+     /* --------Burger Menu----- */
+     .fprint{
+        top: 17vw;
+        right: -20vw;
+     }
+     
+    main ul{
+        margin: 0 10px;
+    }
+
+    .name{
+        float: none;
+    }
+
+    .last_name{
+        margin-left: 0;
+    }
+
+    .cardholder_1n{
+        float: none;
+    }
+
+    .cardholder_2n{
+        margin-left: 0;
+    }
+
+    footer p{
+        left: 0;
+        /* left: 10vw; */
+        top: 7vh;
+    }
+}
+
+/* --------------415px------------------------------------ */
+@media screen and (max-width: 415px){
+    body{
+        max-width: 100%;
+    }
+
+    header h1{
+        font-size: 12.5vw;
+        text-align: center;
+    }
+
+    /* --------Burger Menu----- */
+    .fprint{
+        top: 60px;
+        right: -190px;
+    }
+    .fprint a{
+        display: none;
+        }
+        
+    .fprint a+p{
+        display: none;
+        }
+
+    footer p{
+        font-size: 2vw;
+        left: 12%;
+        top: 4vh;
+    }
+
+    }
