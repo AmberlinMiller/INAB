@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 1200px;
+    /* border: 1px solid white; */
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/* -------------Header--------------------- */
+header{
+    /* border: 1px solid blue; */
+    width: 1200px;
+    height: 100vh;
+    display: block; 
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 0;
+}
+
+.home_title{
+    /* border: 1px solid brown; */
+    width: 1200px;
+    height: 100vh;
+    position: relative;
+    top: 0;
+}
+
+.home_title > div{
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header h1{
+    font-size: 0;
+    font-size: 128px;
+}
+
+header h1 > span{
+    font-size: 15px;
+}
+
+header img{
+    display: inline-block;
+    width: 80px;
+}
+
+header h2{
+    /* writing-mode: vertical-lr; */
+    float: right;
+    font-size: 128px;
+}
+
+/* -------------Burger Menu---------------- */
+.fprint{
+    width: 224px;
+    position: fixed;
+    top: 70px;
+    right: -90px;
+    z-index: 1;
+}
+
+/* --------------Background---------------- */
+.background{
+    /* border: 1px solid red; */
+    width: 1200px;
+    /* height: 100vh; */
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 5px
+}
+
+.NOT{
+    /* border: 1px solid green; */
+}
+
+.BOX{
+    /* border: 1px solid purple; */
+}
+
+.background div{
+    display: inline-block;
+}
+
+marquee{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    color: white;
+    opacity: 0.2;
+    font-size: 61px;
+  }
+
+/* --------------Pictures------------------ */
+main{
+    width: 1200px;
+    height: 50vh;
+    border: 1px solid orange;
+    box-sizing: border-box;
+    position: absolute;
+    top: 90%;
+}
+
+.pics{
+    border: 1px solid rgb(196, 83, 102);
+    max-width: 100%;
+    position: relative;
+}
+
+.pics a span{
+    font-size: 36px;
+}
+
+.abu{
+    border: 1px solid skyblue;
+    background-image: url("../img/home_ab.jpg");
+    display: block;
+    width: 313px;
+    height: 209px;
+
+    position: absolute;
+    top: -200px;
+}
+
+.art{
+    border: 1px solid skyblue;
+    background-image: url("../img/home_art.jpg");
+    display: block;
+    width: 234px;
+    height: 234px;
+
+    position: absolute;
+    top: -200px;
+}
+
+/* --------------Footer-------------------- */
