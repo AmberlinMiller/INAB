@@ -1,3 +1,5 @@
+
+
 *{
     box-sizing: border-box;
 }
@@ -20,6 +22,21 @@ header{
 
     position: absolute;
     top: 0;
+
+    /* Animation */
+    animation-name: surfacing;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    /* animation-delay: 5s; */
+}
+
+@keyframes surfacing{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .home_title{
@@ -29,6 +46,8 @@ header{
     position: relative;
     top: 0;
 }
+
+
 
 .home_title > div{
     width: 1200px;
@@ -40,6 +59,65 @@ header{
 header h1{
     font-size: 0;
     font-size: 128px;
+
+    /* Animation */
+    animation-name: fontChange;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    /* animation-delay: 5s; */
+}
+
+@keyframes fontChange{
+    0%{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /* color: red; */
+    }
+    5%{
+        font-family: 'Libre Bodoni', serif;
+        /* color: red; */
+    }
+    10%{
+        font-family: 'Raleway', sans-serif;
+        /* color: red; */
+    }
+    20%{
+        font-family: 'Roboto Condensed', sans-serif;
+        /* color: red; */
+    }
+    30%{
+        font-family: 'Tapestry', cursive;
+    }
+    40%{
+        font-family: 'Titillium Web', sans-serif;
+        color: #f6f6f6;
+    }
+    50%{
+        font-family: 'Libre Bodoni', serif;
+        color: #f6f6f6;
+    }
+    60%{
+        font-family: 'Raleway', sans-serif;
+        color: #f6f6f6;
+    }
+    70%{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #f6f6f6;
+    }
+    80%{
+        font-family: 'Tapestry', cursive;
+        color: #f6f6f6;
+    }
+    90%{
+        font-family: 'Raleway', sans-serif;
+        color: #f6f6f6;
+    }
+    92%{
+        font-family: 'Bangers', cursive;
+        color: red;
+    }
+    100%{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
 
 header h1 > span{
@@ -55,6 +133,71 @@ header h2{
     /* writing-mode: vertical-lr; */
     float: right;
     font-size: 128px;
+
+     /* Animation */
+     animation-name: fontChange_2;
+     animation-duration: 5s;
+     animation-iteration-count: 1;
+     /* animation-delay: 5s; */
+}
+
+@keyframes fontChange_2{
+    0%{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /* color: red; */
+    }
+    5%{
+        font-family: 'Tapestry', cursive;
+        /* color: red; */
+    }
+    10%{
+        font-family: 'Raleway', sans-serif;
+        /* color: red; */
+    }
+    20%{
+        font-family: 'Titillium Web', sans-serif;
+        /* color: red; */
+    }
+    30%{
+        font-family: 'Tapestry', cursive;
+    }
+    40%{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #f6f6f6;
+    }
+    50%{
+        font-family: 'Libre Bodoni', serif;
+        color: #f6f6f6;
+    }
+    60%{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #f6f6f6;
+    }
+    70%{
+        font-family: 'Raleway', sans-serif;
+        color: #f6f6f6;
+    }
+    80%{
+        font-family: 'Libre Bodoni', serif;
+        color: #f6f6f6;
+    }
+    90%{
+        font-family: 'Raleway', sans-serif;
+        color: #f6f6f6;
+    }
+    92%{
+        font-family: 'Bangers', cursive;
+        color: red;
+    }
+    100%{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+.arrow{
+    position: absolute;
+    top: 20%;
+    left: 25%;
 }
 
 /* -------------Burger Menu---------------- */
@@ -95,20 +238,21 @@ marquee{
     color: white;
     opacity: 0.2;
     font-size: 61px;
+    cursor: context-menu;
   }
 
 /* --------------Pictures------------------ */
 main{
     width: 1200px;
-    height: 50vh;
-    border: 1px solid orange;
+    height: 100vh;
+    /* border: 1px solid orange; */
     box-sizing: border-box;
     position: absolute;
-    top: 90%;
+    top: 100vh;
 }
 
 .pics{
-    border: 1px solid rgb(196, 83, 102);
+    /* border: 1px solid rgb(196, 83, 102); */
     max-width: 100%;
     position: relative;
 }
@@ -118,25 +262,129 @@ main{
 }
 
 .abu{
-    border: 1px solid skyblue;
+    /* border: 1px solid skyblue; */
     background-image: url("../img/home_ab.jpg");
     display: block;
     width: 313px;
     height: 209px;
 
     position: absolute;
-    top: -200px;
+    top: 150px;
+    left: 40px;
+
+    /* animation */
+    animation: floating_abu 2.5s alternate infinite ease-in-out;
+}
+
+@keyframes floating_abu{
+    0%   {transform: scale(.95);}
+    100% {transform: scale(1);}
 }
 
 .art{
-    border: 1px solid skyblue;
+    /* border: 1px solid skyblue; */
     background-image: url("../img/home_art.jpg");
     display: block;
     width: 234px;
     height: 234px;
+    padding-left: 75px;
 
     position: absolute;
-    top: -200px;
+    top: 400px;
+    left: 500px;
+
+    /* animation */
+    animation: floating_art 3s alternate infinite ease-in-out;
 }
 
+@keyframes floating_art{
+    0%   {transform: scale(1.1);}
+    100% {transform: scale(.95);}
+}
+
+.ovh{
+    /* border: 1px solid skyblue; */
+    background-image: url("../img/home_ov.jpg");
+    display: block;
+    width: 367px;
+    height: 246px;
+    padding-top: 210px;
+    padding-left: 84px;
+
+
+    position: absolute;
+    top: 0;
+    left: calc(50% - 367px / 2);
+
+    /* animation */
+    animation: floating_art 2.3s alternate infinite ease-in-out;
+}
+
+@keyframes floating_art{
+    0%   {transform: scale(1);}
+    100% {transform: scale(.95);}
+}
+
+.iso{
+    /* border: 1px solid skyblue; */
+    background-image: url("../img/home_isolata.jpg");
+    display: block;
+    width: 533px;
+    height: 372px;
+
+    position: absolute;
+    top: 800px;
+    right: 40px;
+
+    /* animation */
+    animation: floating_art 2.6s alternate infinite ease-in-out;
+}
+
+@keyframes floating_art{
+    0%   {transform: scale(.95);}
+    100% {transform: scale(1);}
+}
+
+.res{
+    /* border: 1px solid skyblue; */
+    background-image: url("../img/home_re.jpg");
+    display: block;
+    width: 300px;
+    height: 400px;
+    padding-top: 363px;
+
+    position: absolute;
+    top: 500px;
+    left: 70px;
+
+    /* animation */
+    animation: floating_art 2.5s alternate infinite ease-in-out;
+    animation-delay: 2s;
+}
+
+@keyframes floating_art{
+    0%   {transform: scale(1);}
+    100% {transform: scale(.95);}
+}
+
+.con{
+    /* border: 1px solid skyblue; */
+    background-image: url("../img/home_con.jpg");
+    display: block;
+    width: 282px;
+    height: 332px;
+
+    position: absolute;
+    top: 170px;
+    left: 850px;
+
+    /* animation */
+    animation: floating_art 2.8s alternate infinite ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes floating_art{
+    0%   {transform: scale(1);}
+    100% {transform: scale(.95);}
+}
 /* --------------Footer-------------------- */
