@@ -33,28 +33,65 @@ h4{
 /* ----------Header--------------------------- */
 header{
     width: 1200px;
+    /* height: 100vh; */
     margin: 0 auto;
     position: relative;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 h1{
     width: 762px;
     position: absolute;
     top: -13px;
-    left: -10px;
+    /* left: -10px; */
+
+    /* == Animation == */
+    animation-name: h1Animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes h1Animation{
+    from{
+        opacity: 0;
+        /* transform: scale(3); */
+        left:1200px;
+    }
+
+    to{
+        opacity: 1;
+        left:-10px;
+    }
 }
 
 header h3{
     position: absolute;
-    bottom: -6px;
-    right: -2px;
+    bottom: -9px;
+    /* right: -2px; */
 
     width: 978px;
+    opacity: 0;
+    /*== Animation == */
+    animation-name: h3Animation;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes h3Animation{
+    from{
+        opacity: 0;
+        right:1200px;
+    }
+
+    to{
+        opacity: 1;
+        right: -2px;
+    }
 }
 
 .pic_slid{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 100%;
 }
 
@@ -62,54 +99,97 @@ header h3{
     max-width: 100%;
 }
 
-/* ==== Slider Box ==== */
-#sliderBox{    /*div*/
-    /* width: 1200px; */
-    max-width: 100%;
-    border: 1px solid yellow;
-
-    /* overflow: hidden; */
+#banners{
+    height: 610px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-#pics{         /*ul*/
-    max-width: calc(100% * 3);
-    border: 1px solid pink;
+#pics{
+    /* border: 1px solid white; */
+    width: 100%;
 
+    position: relative;
+    z-index: -4;
 }
 
-#image{        /*li*/
-    max-width: 100%;
-    height: 751px;
-
-    float: left;
-} 
-/* ==================================== */
-
-.left{
+#pics li{
+    /* border: 1px solid yellow; */
+    width: 1200px;
     position: absolute;
-    left: 120px;
-    top: 290px;
-    opacity: 0.5;
 }
 
-.left:hover{
-    opacity: 1;
+/* ======Animation====== */
+.pimo{
+    opacity: 0;
+    animation-name: pimoBanner;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-delay: 1.8s;
+
+    /* z-index: 2; */
+    animation-fill-mode: forwards;
 }
 
-img{
-    
+@keyframes pimoBanner{
+    0%{
+        transform: scale(2);
+        opacity: 1;
+    }
+
+    50%{
+        /* opacity: 1; */
+    }
+
+    100%{opacity: 0;}
 }
 
-.right{
-    position: absolute;
-    right: 120px;
-    top: 290px;
-    opacity: 0.5;
+.isoAnimation{
+    opacity: 0;
+    animation-name: isoBanner;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+
+    /* z-index: 1; */
+    animation-fill-mode: forwards;
 }
 
-.right:hover{
-    opacity: 1;
+@keyframes isoBanner{
+    0%{
+        transform: scale(2);
+        opacity: 1;
+    }
+
+    50%{
+        /* opacity: 1; */
+    }
+
+    100%{opacity: 0;}
 }
+
+.hyp{
+    opacity: 0;
+    animation-name: hypBanner;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-delay: 6.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hypBanner{
+    0%{
+        transform: scale(2);
+        opacity: 1;
+    }
+
+    50%{
+        /* opacity: 1; */
+    }
+
+    100%{opacity: 1;}
+}
+/* ===================== */
 
 /* ----------Menu----------------------- */
 .fprint{
@@ -204,7 +284,7 @@ main{
 
 .us h2{
     position: absolute;
-    top: -215px;
+    top: -214px;
     left: 2px;
 }
 

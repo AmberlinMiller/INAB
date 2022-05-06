@@ -141,7 +141,25 @@ header h1 > span{
 header img{
     display: inline-block;
     width: 80px;
-}
+
+     /* Animation */
+     animation-name: surfacingLogo;
+     animation-duration: 9.5s;
+     animation-iteration-count: 1;
+     /* animation-delay: 5s; */
+ }
+ 
+ @keyframes surfacingLogo{
+    0%{opacity: 0;}
+
+    50%{opacity: 0;}
+
+    90%{opacity: 0.8;}
+
+    100%{opacity: 1;}
+ }
+ 
+
 
 header h2{
     /* writing-mode: vertical-lr; */
@@ -226,7 +244,7 @@ header h2{
 
      /* Animation */
      animation-name: surfacing_arr;
-     animation-duration: 12s;
+     animation-duration: 12.5s;
      animation-iteration-count: 1;
      /* animation-delay: 5s; */
  }
