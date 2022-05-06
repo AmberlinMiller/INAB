@@ -35,7 +35,7 @@ header{
     width: 1200px;
     margin: 0 auto;
     position: relative;
-    
+    border: 1px solid blue;
 }
 
 h1{
@@ -53,10 +53,37 @@ header h3{
     width: 978px;
 }
 
-.pic_slid img{
-    width: 100%;
-    height: auto;
+.pic_slid{
+    border: 1px solid red;
+    max-width: 100%;
 }
+
+.pic_slid img{
+    max-width: 100%;
+}
+
+/* ==== Slider Box ==== */
+#sliderBox{    /*div*/
+    /* width: 1200px; */
+    max-width: 100%;
+    border: 1px solid yellow;
+
+    /* overflow: hidden; */
+}
+
+#pics{         /*ul*/
+    max-width: calc(100% * 3);
+    border: 1px solid pink;
+
+}
+
+#image{        /*li*/
+    max-width: 100%;
+    height: 751px;
+
+    float: left;
+} 
+/* ==================================== */
 
 .left{
     position: absolute;

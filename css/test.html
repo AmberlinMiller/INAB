@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jQuery/jquery-3.6.0.js"></script>
+
+    <style>
+        *{
+            list-style: none;
+        }
+
+        .image{
+            width: 100%;
+            height: 650px;
+        }
+
+        /* .pic_slid{
+            width: 1200px;
+            border: 1px solid green;
+        } */
+
+        #sliderBox{
+            border: 1px solid red;
+            
+            width: 100%;
+            height: 650px;
+            margin: 0 auto;
+
+            overflow: hidden;
+        }
+
+        #pics{
+            margin: 0;
+            position: relative;
+        }
+
+        #pics li{
+            float: left;
+        }
+
+        #picsBtn{
+            text-align: center;
+
+            width: 100%;
+            height: 50px;
+        }
+
+        #picsBtn li{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgb(62, 62, 62);
+
+        display: inline-block;
+        margin: 4px;
+        }
+
+        #picsBtn li.clickMe{
+        background-color: grey;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <section class="pic_slid">
+
+        <!-- <a class="left" href="#"><img src="img/about_left.png" alt=""></a> -->
+
+        <div id="sliderBox">
+            <ul id="pics">
+                <li><img src="../img/about_hyp.jpg" class="image"></li>
+                <li><img src="../img/isolata_banner.jpg" class="image"></li>
+                <li><img src="../img/about_pimohtewak.jpg" class="image"> </li>
+            </ul>
+
+            <ul id="picsBtn">
+                <!-- <li class="clickMe"></li>
+                <li></li>
+                <li></li> -->
+            </ul>
+        </div>
+
+        <!-- <a class="right" href="#"><img src="img/about_right.png" alt=""></a> -->
+
+    </section>
+
+    <script>
+
+        $(function(){
+            let boxWidth = $('#sliderBox').width();
+            let imgCount = $('#pics li').length;
+        })
+
+    </script>
+
+</body>
+</html>
