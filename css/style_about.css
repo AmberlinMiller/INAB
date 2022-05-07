@@ -37,6 +37,7 @@ header{
     margin: 0 auto;
     position: relative;
     /* border: 1px solid blue; */
+    overflow: hidden;
 }
 
 h1{
@@ -273,19 +274,44 @@ main{
     margin: 0 auto;
 }
 
+
 /* ----------Sec Us--------------------------- */
 
 .us{
     position: relative;
-    width: 1200px;
+/*     width: 100vw; */
 
     margin-bottom: 100px;
 }
 
-.us h2{
+.aboutTitle{
     position: absolute;
     top: -214px;
-    left: 2px;
+    /* left: 2px; */
+    
+    opacity: 0;
+}
+
+.aboutToRun{
+    /* Animation */
+    animation-name: abuAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes abuAnimation{
+    from{
+        opacity: 0;
+        /* transform: scale(3); */
+        left:1200px;
+    }
+
+    to{
+        opacity: 1;
+        left:2px;
+    }
 }
 
 .us p{
@@ -296,6 +322,25 @@ main{
     margin-top: 200px;
 
     font-size: 32px;
+
+    
+    opacity: 0;
+}
+
+.aboutToAppear{
+    /* Animation */
+    animation-name: usAnimation;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes usAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 .us img{
@@ -303,7 +348,23 @@ main{
     left: 1100px;
     top: 310px;
     z-index: 1;
-}
+    
+    /* Animation */
+    animation-name: usArAnimation;
+    animation-delay: 10s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    opacity: 0;
+    }
+
+@keyframes usArAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
+    }
 
 /* ----------Sec Mandate---------------------- */
 
@@ -317,10 +378,32 @@ main{
 .mandate h3{
     position: absolute;
     top: 92px;
-    left: 242px;
+    /* left: 242px; */
 }
 
-.mandate .bgi{
+.mandateToRun{
+    /* Animation */
+    animation-name: mdH3Animation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mdH3Animation{
+    from{
+        opacity: 0;
+        /* transform: scale(3); */
+        left:1200px;
+    }
+
+    to{
+        opacity: 1;
+        left:242px;
+    }
+}
+
+.mandate .mbgi{
     /* position: absolute;
     left: 120px; */
     opacity: 0.5;
@@ -345,6 +428,24 @@ main{
     position: absolute;
     left: 270px;
     top: 260px;
+
+    opacity: 0;
+}
+
+.mandateToAppear{
+    /* Animation */
+    animation-name: mdAnimation;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mdAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 .m_arrow{
@@ -366,12 +467,34 @@ main{
 
 .history h3{
     position: absolute;
-    left: 908px;
+    /* left: 908px; */
+
+    opacity: 0;
 }
 
-.history ol{
-    
+.historyH3ToAppear{
+    /* Animation */
+    animation-name: hisH3Animation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+@keyframes hisH3Animation{
+    from{
+        opacity: 0;
+        /* transform: scale(3); */
+        left:0px;
+    }
+
+    to{
+        opacity: 1;
+        left:908px;
+    }
+}
+
+.history ol{}
 
 .history ul li{
     color: #f6f6f6;
@@ -380,6 +503,26 @@ main{
 
 .year{
     font-size: 96px;
+
+    opacity: 0;
+}
+
+.yearFlipper{
+    /* Animation */
+    animation-name: flipper;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipper{
+    from{
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(720deg);
+    }
 }
 
 .year span{
@@ -399,7 +542,31 @@ ol p{
 .y2015 + p{
     position: absolute;
     top: 166px;
-    left: 750px;
+    /* left: 750px; */
+
+    opacity: 0;
+}
+
+.y2015p{
+    /* Animation */
+    animation-name: yr2015;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes yr2015{
+    from{
+        opacity: 0;
+        /* transform: scale(3); */
+        left:0px;
+    }
+
+    to{
+        opacity: 1;
+        left: 750px;
+    }
 }
 
 .y2016{
@@ -413,7 +580,31 @@ ol p{
 
     position: absolute;
     top: 316px;
-    left: 120px;
+    right: 660px;
+
+    opacity: 0;
+}
+
+.y2016p{
+    /* Animation */
+    animation-name: yr2016;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes yr2016{
+    from{
+        opacity: 0;
+        /* transform: scale(3); */
+        right:0px;
+    }
+
+    to{
+        opacity: 1;
+        right: 660px;
+    }
 }
 
 .y2017{
@@ -425,7 +616,31 @@ ol p{
 .y2017 + p{
     position: absolute;
     top: 490px;
-    left: 640px;
+    /* left: 640px; */
+
+    opacity: 0;
+}
+
+.y2017p{
+    /* Animation */
+    animation-name: yr2017;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes yr2017{
+    from{
+        opacity: 0;
+        /* transform: scale(3); */
+        left:0px;
+    }
+
+    to{
+        opacity: 1;
+        left: 640px;
+    }
 }
 
 .y2018{
@@ -439,7 +654,31 @@ ol p{
 
     position: absolute;
     top: 616px;
-    left: 15px;
+    /* right: 745px; */
+
+    opacity: 0;
+}
+
+.y2018p{
+    /* Animation */
+    animation-name: yr2018;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes yr2018{
+    from{
+        opacity: 0;
+        /* transform: scale(3); */
+        right:0px;
+    }
+
+    to{
+        opacity: 1;
+        right: 745px;
+    }
 }
 
 .y2019{
@@ -453,7 +692,31 @@ ol p{
 
     position: absolute;
     top: 742px;
-    left: 590px;
+    /* left: 590px; */
+
+    opacity: 0;
+}
+
+.y2019p{
+    /* Animation */
+    animation-name: yr2019;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes yr2019{
+    from{
+        opacity: 0;
+        /* transform: scale(3); */
+        left:0px;
+    }
+
+    to{
+        opacity: 1;
+        left: 590px;
+    }
 }
 
 .y2020{
@@ -467,7 +730,31 @@ ol p{
 
     position: absolute;
     top: 916px;
-    left: 315px;
+    right: 705px;
+
+    opacity: 0;
+}
+
+.y2020p{
+    /* Animation */
+    animation-name: yr2020;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes yr2020{
+    from{
+        opacity: 0;
+        /* transform: scale(3); */
+        right:0px;
+    }
+
+    to{
+        opacity: 1;
+        right: 705px;
+    }
 }
 
 .y2021{
@@ -481,7 +768,30 @@ ol p{
 
     position: absolute;
     top: 1090px;
-    left: 660px;
+    /* left: 660px; */
+    opacity: 0;
+}
+
+.y2021p{
+    /* Animation */
+    animation-name: yr2021;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes yr2021{
+    from{
+        opacity: 0;
+        /* transform: scale(3); */
+        left:0px;
+    }
+
+    to{
+        opacity: 1;
+        left: 660px;
+    }
 }
 
 .history img{
