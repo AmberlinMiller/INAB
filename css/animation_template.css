@@ -7,7 +7,7 @@
     animation-name: hisH3Animation;
     /* animation-delay: 1s; */
     animation-duration: 4s;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -32,7 +32,6 @@
 @keyframes mdH3Animation{
     from{
         opacity: 0;
-        /* transform: scale(3); */
         left:1200px;
     }
 
@@ -40,4 +39,49 @@
         opacity: 1;
         left:242px;
     }
+}
+
+/* -----Color Change------- */
+.landDivColor{
+    /* Animation */
+    animation-name: landDivAnimation;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes landDivAnimation{
+    from{background-color: black;}
+
+    to{    background-color: #f6f6f6;}
+}
+
+/* ------ Rotate ------ */
+.yearFlipper{
+    /* Animation */
+    animation-name: flipper;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipper{
+    from{
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(720deg);
+    }
+}
+.floating{
+/* animation */
+animation: floating_abu 2.5s alternate infinite ease-in-out;
+}
+
+@keyframes floating_abu{
+    0%   {transform: scale(.95);}
+    100% {transform: scale(1);}
 }

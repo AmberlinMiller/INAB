@@ -36,6 +36,7 @@ header{
     width: 1200px;
     margin: 0 auto;
     margin-bottom: 100px;
+    overflow: hidden;
 
     position: relative;
 }
@@ -43,13 +44,56 @@ header{
 header h1{
     position: absolute;
     top: -13px;
-    left: -8px;
+    /* left: -8px; */
     
+    /* Animation */
+    opacity: 0;
+    animation-name: isoH1Animation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes isoH1Animation{
+    from{
+        opacity: 0;
+        left:1200px;
+    }
+
+    to{
+        opacity: 1;
+        left:-8px;
+    }
 }
 
 header img{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 75px;
+
+    /* Animation */
+    opacity: 0;
+    animation-name: isoHIAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes isoHIAnimation{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);      
+        opacity: 1;
+    }
 }
 
 header p{
@@ -58,6 +102,24 @@ header p{
     line-height: 1.6;
     text-align: center;
     margin: 0 auto;
+
+    opacity: 0;
+}
+
+.isolataHPAppear{
+    /* Animation */
+    animation-name: isoHPAnimation;
+    /* animation-delay: 1s; */
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes isoHPAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 /* -------------Burger Menu---------------- */
@@ -145,6 +207,24 @@ header p{
 .drowned img{
     width: 500px;
     /* height: 634px; */
+    opacity: 0;
+}
+
+.drownedIAppear{
+    /* animation */
+    animation: drowning 4s alternate infinite ease-in-out;
+    }
+    
+@keyframes drowning{
+    0%{opacity: 0.2;}
+    50%{
+            opacity: 0.5;
+            transform: scale(.95);
+    }
+    100%{
+            opacity: 1;
+            transform: scale(1);
+    }
 }
 
 article{
@@ -156,6 +236,24 @@ article{
 
     margin-top: 5%;
     margin-right: 30px;
+
+    opacity: 0;
+}
+
+.drownedAAppear{
+    /* Animation */
+    animation-name: drownedAAnimation;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drownedAAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 .drowned img + article{
@@ -224,12 +322,51 @@ article p{
 
     margin-top: 300px;
     margin-left: 250px;
+    opacity: 0;
+}
+
+.voidPAppear{
+    /* animation */
+    animation: zooming_void 4s .2s alternate 1 forwards ease-in-out;
+}
+        
+@keyframes zooming_void{
+     0%{
+         opacity: 0.2;
+         transform: scale(.1);
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(.95);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .void img{
     width: 500px;
     /* height: 634px; */
     float: right;
+    opacity: 0;
+}
+
+.voidIAppear{
+    /* animation */
+    animation: voiding 4s alternate infinite ease-in-out;
+    }
+    
+@keyframes voiding{
+    0%{opacity: 0.2;}
+    50%{
+            opacity: 0.5;
+            transform: scale(.95);
+    }
+    100%{
+            opacity: 1;
+            transform: scale(1);
+    }
 }
 
 .void::after{
@@ -418,15 +555,15 @@ footer p{
     }
 
     .void p{
-        font-size: 6vw;
+        font-size: 4vw;
         margin: 0;
         border: 2px solid white;
         padding: 5px;
 
         position: absolute;
         top: 60%;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 34%;
+        /* transform: translateX(-50%); */
         z-index: 1;
     }
 
@@ -435,8 +572,8 @@ footer p{
         float: none;
 
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 20%;
+        /* transform: translateX(-50%); */
         z-index: -1;
     }
 

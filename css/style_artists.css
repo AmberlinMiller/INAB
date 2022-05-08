@@ -34,6 +34,7 @@ header{
     width: 1200px;
     height: 90px;
     margin: 0 auto;
+    overflow: hidden;
 
     position: relative;
 }
@@ -41,7 +42,27 @@ header{
 header h1{
     position: absolute;
     top: -13px;
-    left: -4px;
+    /* left: -4px; */
+    opacity: 0;
+
+    /* Animation */
+    animation-name: artistAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes artistAnimation{
+    from{
+        opacity: 0;
+        left:1200px;
+    }
+
+    to{
+        opacity: 1;
+        left:-4px;
+    }
 }
 
 /* -------------Burger Menu---------------- */
@@ -143,37 +164,172 @@ a img{
     position: absolute;
     top: 320px;
     left: 0;
+    opacity: 0;
+
+    /* Animation */
+    animation-name: flipper_am1;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes flipper_am1{
+    0%{opacity: 0;}
+    
+    50%{
+        opacity: 1;
+        transform: rotateY(400deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
 }
 
 .amber2{
     position: absolute;
     top: 160px;
     left: 204px;
-}
+    opacity: 0;
+
+    /* Animation */
+    animation-name: flipper_am2;
+    animation-delay: 1.1s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+ 
+ @keyframes flipper_am2{
+    0%{opacity: 0;}
+
+    50%{
+        opacity: 1;
+        transform: rotateY(400deg);
+    }
+    to{
+       opacity: 1;
+        transform: rotateY(360deg);
+   }
+ }
+
 
 .amber3{
     position: absolute;
     top: 80px;
     left: 408px;
-}
+    opacity: 0;
+
+    /* Animation */
+    animation-name: flipper_am3;
+    animation-delay: 1.2s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+ 
+ @keyframes flipper_am3{
+    0%{opacity: 0;}
+
+     50%{
+         opacity: 1;
+         transform: rotateY(400deg);
+     }
+     to{
+        opacity: 1;
+         transform: rotateY(360deg);
+    }
+ }
+
 
 .torien1{
     position: absolute;
     top: 0;
     right: 408px;
-}
+    opacity: 0;
+
+    /* Animation */
+    animation-name: flipper_tor1;
+    animation-delay: 1.3s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+ 
+ @keyframes flipper_tor1{
+    0%{opacity: 0;}
+
+     50%{
+         opacity: 1;
+         transform: rotateY(400deg);
+     }
+     to{
+        opacity: 1;
+         transform: rotateY(360deg);
+    }
+ }
 
 .torien2{
     position: absolute;
     top: 160px;
     right: 204px;
-}
+    opacity: 0;
+
+    /* Animation */
+    animation-name: flipper_tor2;
+    animation-delay: 1.4s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+ 
+ @keyframes flipper_tor2{
+    0%{opacity: 0;}
+
+     50%{
+         opacity: 1;
+         transform: rotateY(400deg);
+     }
+     to{
+        opacity: 1;
+         transform: rotateY(360deg);
+    }
+ }
 
 .torien3{
     position: absolute;
     top: 240px;
     right: 0px;
-}
+    opacity: 0;
+
+    /* Animation */
+    animation-name: flipper_tor3;
+    animation-delay: 1.4s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ }
+ 
+ @keyframes flipper_tor3{
+    0%{opacity: 0;}
+
+     50%{
+         opacity: 1;
+         transform: rotateY(400deg);
+     }
+     to{
+        opacity: 1;
+         transform: rotateY(360deg);
+    }
+ }
 
 /* -----------Description-----------------------*/
 main{
@@ -186,25 +342,43 @@ main{
     width: 1200px;
     /* height: 500px; */
     margin: 0 auto;
-    margin-bottom: 10vh;
+    margin-bottom: 200px;
     /* border: 2px solid white; */
 
     display: flex;
 }
 
-#torien img{
+.torienImage{
     opacity: 0.6;
     width: 600px;
     height: 369px;
     margin: auto 30px;
-
-    transition: 1s;
+    opacity: 0;
+    /* transition: 1s; */
 }
 
-#torien img:hover{
+.torienPic{
+     /* Animation */
+     animation-name: torienAnimation;
+     animation-duration: 2s;
+     animation-timing-function: ease;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes torienAnimation{
+     from{
+     }
+     to{
+         opacity: 1;
+         transform: rotateY(405deg);
+     }
+ }
+
+/* #torien img:hover{
     transform: rotateY(45deg);
     transition-timing-function: ease-out;
-}
+} */
 
 #torien article{
     margin: 20px 70px 0 70px;
@@ -213,6 +387,22 @@ main{
 #torien h3{
     text-align: center;
     margin-bottom: 10px;
+    opacity: 0;
+}
+
+.torienH3Appear{
+    /* Animation */
+    animation-name: torienH3Animation;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes torienH3Animation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 #torien p{
@@ -220,6 +410,23 @@ main{
     height: 250px;
     font-size: 16px;
     line-height: 1.6;
+    opacity: 0;
+}
+
+.torienPAppear{
+    /* Animation */
+    animation-name: torienPAnimation;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes torienPAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 /* -----------Amberlin------------------------- */
@@ -239,13 +446,31 @@ main{
     height: 369px;
     margin: auto 30px;
 
-    transition: 1s;
+   opacity: 0;
 }
 
-#amberlin img:hover{
+.amberlinPic{
+    /* Animation */
+    animation-name: amberlinAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes amberlinAnimation{
+    from{
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(-315deg);
+    }
+}
+
+/* #amberlin img:hover{
     transform: rotateY(-45deg);
     transition-timing-function: ease-out;
-}
+} */
 
 #amberlin article{
     margin: auto 70px;
@@ -254,11 +479,44 @@ main{
 #amberlin h3{
     text-align: center;
     margin-bottom: 20px;
+    opacity: 0;
+}
+
+.amberlinH3Appear{
+    /* Animation */
+    animation-name: amberlinH3Animation;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes amberlinH3Animation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 #amberlin p{
     line-height: 1.6;
     font-size: 16px;
+    opacity: 0;
+}
+
+.amberlinPAppear{
+    /* Animation */
+    animation-name: amberlinPAnimation;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes amberlinPAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 /* ---------Navigation---------------- */
 .btt{
@@ -352,170 +610,3 @@ footer p{
     top: 35px;
 }
 
-/* ---------Media Query------------------------------------- */
-@media screen and (max-width: 1219px){
-    body{
-        max-width: 100%;
-    }
-
-    /* --------Burger Menu----- */
-    .fprint{
-       top: 17vw;
-       right: -10vw;
-    }
-    .fprint a{
-        display: none;
-        }
-        
-    .fprint a+p{
-        display: none;
-        }
-
-    /* ---------Header--------- */
-    header{
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        margin-bottom: 50px;
-    }
-
-    header h1{
-        font-size: 17vw;
-        position: static;
-        text-align: center;
-        order: 1;
-    }
-
-    /* ---------Headshot-------- */
-    .headshot{
-        max-width: 100%;
-        max-height: 90vh;
-        box-sizing: border-box;
-        display: flex;
-    }
-
-    .headshot img{
-        position: static;
-        max-width: 100%;
-    }
-
-    /* -----------Description-----------------------*/
-    main{
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* -----------Torien--------------------------- */
-    #torien{
-        max-width: 100%;
-        display: flex;
-    }
-
-    #torien img{
-        max-width: 100%;
-    }
-
-    #torien article{
-    }
-
-    #torien h3{
-        font-size: 2vw;
-    }
-
-    #torien p{
-        width: 400px;
-        height: 250px;
-        font-size: 16px;
-        line-height: 1.6;
-    }
-
-    /* -----------Amberlin------------------------- */
-    #amberlin{
-        width: 1200px;
-        height: 500px;
-        margin: 0 auto;
-        /* border: 2px solid white; */
-
-        display: flex;
-    }
-
-    #amberlin img{
-        opacity: 0.6;
-        width: 600px;
-        height: 369px;
-        margin: auto 30px;
-
-        transition: 1s;
-    }
-
-    #amberlin img:hover{
-        transform: rotateY(-45deg);
-        transition-timing-function: ease-out;
-    }
-
-    #amberlin article{
-        margin: auto 70px;
-    }
-
-    #amberlin h3{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    #amberlin p{
-        line-height: 1.6;
-        font-size: 16px;
-    }
-
-    /* --------Nav-------------- */
-   .btt{
-    max-width: 100%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    }
-
-    .btt li{
-        display: block;
-        text-align: center;
-    }
-
-    .btt li a{
-        color: #f6f6f6;
-        opacity: 0.6;
-        font-size: 3vw;
-        text-decoration: none;
-    }
-
-    .btt li img{
-        width: 10%;
-        margin-top: 10px;
-    }
-
-    /* ---------Footer---------- */
-
-    footer{
-        max-width: calc(100% - 10%);
-
-    }
-
-    .cca_logo{
-        max-width: 24vw;
-        /* margin-top: 16px; */
-    }
-
-    .sab_logo{
-    max-width: 6vw; 
-    }
-
-
-    .media li a img{
-        max-width: 6vw;
-        /* margin-bottom: 0;
-        margin-top: 7px; */
-    }
-
-    footer p{
-        left: 40%;
-    }
-}

@@ -34,18 +34,63 @@ header{
     height: 700px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 header h1{
     position: absolute;
     top: -13px;
-    left: -3px;
+    /* left: -3px; */
+
+     /* Animation */
+     opacity: 0;
+     animation-name: ovhH1Animation;
+     animation-delay: 1s;
+     animation-duration: 2s;
+     animation-timing-function: ease;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes ovhH1Animation{
+     from{
+         opacity: 0;
+         left:1200px;
+     }
+ 
+     to{
+         opacity: 1;
+         left:-3px;
+     }
 }
 
 header h3{
+    width: 256px;
+    max-width: 100%;
     position: absolute;
     top: 320px;
-    right: 95px;
+    /* right: 95px; */
+
+     /* Animation */
+     opacity: 0;
+     animation-name: ovhH3Animation;
+     animation-delay: 1s;
+     animation-duration: 2s;
+     animation-timing-function: ease;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes ovhH3Animation{
+     from{
+         opacity: 0;
+         right:1200px;
+     }
+ 
+     to{
+         opacity: 1;
+         right:95px;
+     }
 }
 
 header p{
@@ -55,6 +100,21 @@ header p{
     position: absolute;
     bottom: 115px;
     right: 0px;
+
+    /* Animation */
+    opacity: 0;
+    animation-name: ovhPAnimation;
+    animation-delay: 2.5s;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ovhPAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 header img{
@@ -62,6 +122,21 @@ header img{
     z-index: -1;
     position: absolute;
     bottom: 120px;
+
+    /* Animation */
+    opacity: 0;
+    animation-name: ovhIAnimation;
+    /* animation-delay: 1s; */
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ovhIAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 /* -------------Burger Menu---------------- */
@@ -144,6 +219,23 @@ section{
     width: 1200px;
     margin: 0 auto;
     position: relative;
+    opacity: 0;
+}
+
+.overhearShowAppear{
+    /* Animation */
+    animation-name: ovhShowAnimation;
+    /* animation-delay: 1s; */
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ovhShowAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 .show1{

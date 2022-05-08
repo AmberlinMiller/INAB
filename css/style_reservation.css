@@ -35,14 +35,34 @@ header{
     height: 100px;
     margin: 0 auto;
     margin-bottom: 35px;
-
+    overflow: hidden;
     position: relative;
 }
 
 header h1{
     position: absolute;
     top: -13px;
-    left: -4px;
+    /* left: -4px; */
+
+    /* Animation */
+    opacity: 0;
+    animation-name: resH1Animation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes resH1Animation{
+    from{
+        opacity: 0;
+        left:1200px;
+    }
+
+    to{
+        opacity: 1;
+        left:-4px;
+    }
 }
 
 /* -------------Burger Menu---------------- */
@@ -136,6 +156,21 @@ main ul li{
 
 main ul li p{
     margin-bottom: 20px;
+
+     /* Animation */
+     opacity: 0;
+     animation-name: redPAnimation;
+     animation-delay: 1s;
+     animation-duration: 4s;
+     animation-timing-function: linear;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+ 
+ @keyframes redPAnimation{
+     from{opacity: 0;}
+ 
+     to{opacity: 1;}
 }
 
 main ul li input{
@@ -143,6 +178,21 @@ main ul li input{
     opacity: 0.8;
     margin-bottom: 40px;
     font-size: 24px;
+
+    /* Animation */
+    opacity: 0;
+    animation-name: resIpAnimation;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes resIpAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 main ul li select{
@@ -150,6 +200,21 @@ main ul li select{
     opacity: 0.8;
     margin-bottom: 40px;
     font-size: 24px;
+
+    /* Animation */
+    opacity: 0;
+    animation-name: resSlAnimation;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes resSlAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 .name{

@@ -52,3 +52,22 @@ $(function(){
     return false;
   });
 });
+
+// ---------Scroll Animation ---------------------
+// function runner2015() {
+//   var show2015 = document.querySelectorAll("li.y2015+p");
+
+//   for (var i = 0; i < show2015.length; i++) {
+//     var windowHeight = window.innerHeight; 
+//     var elementTop = show2015[i].getBoundingClientRect().top; 
+//     var elementVisible = 50; 
+
+//     if (elementTop < windowHeight - elementVisible) { 
+//       show2015[i].classList.add("y2015p"); 
+//     } else { 
+//       show2015[i].classList.remove("y2015p"); 
+//     }
+//   }
+// }
+
+// window.addEventListener("scroll", runner2015);

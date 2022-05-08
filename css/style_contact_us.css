@@ -40,15 +40,37 @@ header{
     height: 100px;
     margin: 0 auto;
     margin-bottom: 35px;
-
+    overflow: hidden;
     position: relative;
 }
 
 header h1{
+    width: 100%;
     position: absolute;
     top: -13px;
-    left: -4px;
+    /* left: -4px; */
+
+    /* Animation */
+    opacity: 0;
+    animation-name: conH3Animation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+@keyframes conH3Animation{
+    from{
+        opacity: 0;
+        left:1200px;
+    }
+
+    to{
+        opacity: 1;
+        left:-4px;
+    }
+}
+
 
 /* -------------Burger Menu---------------- */
 .fprint{
@@ -138,6 +160,21 @@ section ul{
 ul li p{
     font-size: 24px;
     margin-bottom: 20px;
+
+    /* Animation */
+    opacity: 0;
+    animation-name: conPAnimation;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes conPAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 input{
@@ -145,11 +182,42 @@ input{
     opacity: 0.8;
     margin-bottom: 40px;
     font-size: 24px;
+
+    /* Animation */
+    opacity: 0;
+    animation-name: conPAnimation;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes conPAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 textarea{
     font-size: 24px;
+
+    /* Animation */
+    opacity: 0;
+    animation-name: conPAnimation;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+@keyframes conPAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
+}
+
 
 .name{
     width: 375px;

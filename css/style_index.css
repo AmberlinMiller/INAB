@@ -12,6 +12,22 @@ h1{
     margin: auto;
     margin-top: 15%;
     width: 585px;
+    max-width: 100%;
+
+    /* Animation */
+    animation-name: indexH1Animation;
+    opacity: 0;
+    animation-delay: 4s;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes indexH1Animation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 p{
@@ -19,15 +35,46 @@ p{
     margin-top: 2%;
 
     width: 923px;
+    max-width: 100%;
     text-align: center;
     line-height: 1.6;
-    
+
+    /* Animation */
+    animation-name: indexPAnimation;
+    opacity: 0;
+    /* animation-delay: 4s; */
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes indexPAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 audio{
     width: 500px;
+    max-width: 80%;
     display: block;
     margin: 30px auto;
+
+    /* Animation */
+    animation-name: indexAudAnimation;
+    opacity: 0;
+    animation-delay: .5s;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes indexAudAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 ul{
@@ -37,14 +84,69 @@ ul{
 
 ul li{
     display: inline-block;
+
+    /* Animation */
+    animation-name: indexLiFlip;
+    opacity: 0;
+    animation-delay: 7s;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes indexLiFlip{
+    from{
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(360deg);
+    }
 }
 
 ul li a{
     display: block;
     color: black;
     text-decoration: none;
+
+    transition: all 1s;
+}
+
+ul li a:hover{
+    transform: scale(1.2);
 }
 
 .no{
     font-size: 52px;
+}
+
+/* --------------415px------------------------------------ */
+@media screen and (max-width: 415px){
+    body{
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 12vw;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    audio{
+        margin-bottom: 100px;
+    }
+
+    ul{
+        text-align: center;
+    }
+
+    li{
+        font-size: 10vw;
+    }
+    
+    .no{
+        font-size: 8vw;
+        margin-bottom: 100px;
+    }
 }

@@ -37,29 +37,89 @@ header{
     margin: 0 auto;
     margin-bottom: 100px;
     position: relative;
+    overflow: hidden;
 }
 
 header h1{
     position: absolute;
     top: -13px;
     left: -8px;
+    /* Animation */
+    opacity: 0;
+    animation-name: loveH1Animation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
+@keyframes loveH1Animation{
+    from{
+        opacity: 0;
+        left:1200px;
+    }
+
+    to{
+        opacity: 1;
+        left:-8px;
+    }
 }
 
 header img{
     width: 100%;
     position: absolute;
-    top: 95px;
+    top: 71px;
     left: 0;
 
+    /* Animation */
+    opacity: 0;
+    animation-name: loveHIAnimation;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loveHIAnimation{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);      
+        opacity: 1;
+    }
 }
 
 header h2{
     font-size: 128px;
 
     position: absolute;
-    bottom: 110px;
+    bottom: 120px;
     right: 75px;
+
+    /* Animation */
+    opacity: 0;
+    animation-name: rotator;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotator{
+    from{
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(720deg);
+    }
 }
 
 header p{
@@ -69,6 +129,23 @@ header p{
     position: absolute;
     bottom: 0;
     left: 0px;
+    opacity: 0;
+}
+
+.headerPAppear{
+    /* Animation */
+    animation-name: HPAnimation;
+    /* animation-delay: 1s; */
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes HPAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 /* -------------Burger Menu---------------- */
@@ -152,6 +229,25 @@ section{
     margin: 0 auto;
     margin-bottom: 100px;
 }
+
+.optionFlipper{
+    /* Animation */
+    animation-name: opFlipper;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opFlipper{
+    from{
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(720deg);
+    }
+}
+
 section div{
     width: 697px;
     display: block;
@@ -200,6 +296,23 @@ section p{
     margin-bottom: 100px;
 
     position: relative;
+    opacity: 0;
+}
+
+.laurielAppear{
+    /* Animation */
+    animation-name: laurielAnimation;
+    /* animation-delay: 1s; */
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes laurielAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 .title{
@@ -249,7 +362,24 @@ section p{
     /* border: 2px solid white; */
     margin: 0 auto;
 
-    position: relative;;
+    position: relative;
+    opacity: 0;
+}
+
+.anonymousAppear{
+    /* Animation */
+    animation-name: anonymousAnimation;
+    /* animation-delay: 1s; */
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anonymousAnimation{
+    from{opacity: 0;}
+
+    to{opacity: 1;}
 }
 
 .title_a{
@@ -501,6 +631,7 @@ footer p{
     }
 
     .laur2 > img{
+        display: none;
         width: 311px;
         max-width: 100%;
     }
@@ -513,7 +644,7 @@ footer p{
         text-align: center;
         /* color: black; */
         font-size: 4vw;
-        margin-top: 20vh;
+        /* margin-top: 20vh; */
         margin-bottom: 5%;
     }
 
@@ -535,6 +666,7 @@ footer p{
     .laur2 > div{
         border: 2px solid #f6f6f6;
         min-width: 60%;
+        padding: 10%;
     }
 
     /* ---------Anonymous-------- */
@@ -549,6 +681,7 @@ footer p{
     }
 
     .anonymous2 > img{
+        display: none;
         max-width: 100%;
         flex-grow: 2;
     }
@@ -560,7 +693,7 @@ footer p{
         text-align: center;
         /* color: black; */
         font-size: 4vw;
-        margin-top: 15vh;
+        /* margin-top: 10vh; */
         margin-bottom: 5%;
     }
 
@@ -592,6 +725,7 @@ footer p{
         border: 2px solid #f6f6f6;
         min-width: 60%;
         flex-grow: 3;
+        padding: 10%;
     }
     
      /* --------Nav-------------- */
