@@ -185,8 +185,8 @@ header p{
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: 65px;
+  right: 100px;
   font-size: 36px;
   margin-left: 50px;
 }

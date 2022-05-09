@@ -269,6 +269,14 @@ header h2{
     z-index: 1;
 }
 
+.sidenav .closebtn {
+    position: absolute;
+    top: 65px;
+    right: 80px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
 /* --------------Background---------------- */
 .background{
     /* border: 1px solid red; */
@@ -320,7 +328,7 @@ main{
     /* Animation */
     animation-name: mainAnimation;
     /* animation-delay: 1s; */
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
