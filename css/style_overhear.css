@@ -553,6 +553,11 @@ footer p{
         display: none;
         }
 
+    .sidenav .closebtn {
+        top: 50px;
+        right: 0px;
+    }
+
     /* ---------Header--------- */
     header{
         max-width: 100%;

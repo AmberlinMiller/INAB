@@ -810,7 +810,7 @@ footer p{
     /* --------Burger Menu----- */
     .fprint{
         top: 60px;
-        right: -190px;
+        right: -230px;
     }
     .fprint a{
         display: none;
@@ -827,5 +827,10 @@ footer p{
         /* left: 50%;
         transform: translateX(-50%); */
     }
+
+    .sidenav .closebtn {
+        top: 50px;
+        right: 0px;
+      }
 
 }

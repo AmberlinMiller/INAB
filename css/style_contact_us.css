@@ -561,7 +561,7 @@ footer p{
     /* --------Burger Menu----- */
     .fprint{
         top: 60px;
-        right: -165px;
+        right: -190px;
     }
     .fprint a{
         display: none;
@@ -575,6 +575,11 @@ footer p{
         font-size: 2vw;
         left: 12%;
         top: 4vh;
+    }
+
+    .sidenav .closebtn {
+        top: 50px;
+        right: 0px;
     }
 
 }

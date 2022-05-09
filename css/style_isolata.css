@@ -673,6 +673,11 @@ footer p{
         display: none;
         }
 
+    .sidenav .closebtn {
+        top: 50px;
+        right: 10px;
+    }
+
     footer p{
         font-size: 2vw;
         left: 10%;

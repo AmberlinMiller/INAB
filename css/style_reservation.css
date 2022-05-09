@@ -594,4 +594,9 @@ footer p{
         top: 4vh;
     }
 
-    }
+    .sidenav .closebtn {
+        top: 50px;
+        right: 10px;
+      }
+
+}
